@@ -18,7 +18,7 @@ The textbook itself may be downloaded from any of the following sites (among oth
 As this version of the manual has not been thoroughly proofread, it would be greatly appreciated if you can inform yours truly, through the `Issues` section of this repository or by email: [(justineuro@gmail.com)](mailto:justineuro@gmail.com), of any typographical errors that you spot (you may also send a `git pull` request for purposes related to this). Looking forward to collaborating with you, many thanks!
 
 ## Creating a PDF copy
-To create your own PDF copy, open the file `main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  Alternatively, at the linux command line and under your local copy of `MGB-main` folder:
+To create your own PDF copy, open the file `mgb-main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  Alternatively, at the linux command line and under your local copy of `MGB-main` folder:
 ```bash
 pdflatex mgb-main.tex
 ```
