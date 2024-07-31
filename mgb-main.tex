@@ -1,0 +1,154 @@
+\documentclass[10pt,a4paper,twoside,titlepage,fleqn,leqno]{book}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+%use \ttfamily as default for non-math text
+%https://ftp.ntou.edu.tw/ctan/info/Free_Math_Font_Survey/survey.html#fig:ConcMath
+%use Concrete text with Concrete math
+\usepackage{ccfonts} 
+\usepackage[T1]{fontenc} 
+
+%for \mathscr
+\usepackage{mathrsfs}
+
+%change math font to ttfamily
+%https://tex.stackexchange.com/questions/86785/how-do-i-change-the-standard-math-font
+%User:user4686
+%Note: option `defaultmathsizes` would tell `mathastext` to use the standard choices of sizes for sub and sub-sub-scriptstyle. 
+\usepackage{mathastext}
+\MTfamily{\ttdefault}\Mathastext
+
+%\renewcommand{\chaptername}{CHAPTER} % this is addressed later
+\renewcommand{\thechapter}{\Roman{chapter}}
+
+%for changing the chapter header style
+%https://tex.stackexchange.com/questions/344178/how-can-i-change-the-header-style
+%\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{{\tt \hspace*{0.50in} CHAPTER \thechapter}}
+\fancyhead[RO]{\tt \hspace*{6.00in} \thepage}
+\fancyhead[LE]{\tt \hspace*{-0.75in} \thepage}%-1.00
+\fancyfoot[CE,CO]{}
+\fancyfoot[LE,RO]{}
+\renewcommand{\headrulewidth}{0pt} %no headrule
+\renewcommand{\footrulewidth}{0pt} %no footrule
+
+%for creating the (non-begining chapter) page headers and footers  
+%https://www.overleaf.com/learn/latex/Sections_and_chapters
+\usepackage{titlesec}
+\titleformat
+{\chapter} % command
+[display] % shape
+{\normalsize} % format
+{\vspace*{-1.00in}\hspace{6.00in}\thepage \\ \setlength{\baselineskip}{-0.00in} \begin{center} CHAPTER \thechapter\end{center}} % label
+{0.00ex} % sep
+{} % before-code
+[] % after-code
+
+\newcommand{\dsp}{\displaystyle}
+
+\DeclareMathOperator*{\lcap}{\cap}
+\DeclareMathOperator*{\lcup}{\cup}
+
+%page formatting details
+\topmargin -0.50in
+\oddsidemargin 0.25in
+\evensidemargin -0.25in
+\textwidth 5.5in %6.00in
+\textheight 9.25in
+\mathindent 0.0in
+
+%details for title page
+\date{\sc April 23, 2022}
+\author{\sc Anonymous}
+\title{\sc {\Huge Solutions Manual} \\ {to Introduction to the Theory of Statistics (1974)} \\ {by A.M. Mood, F.A. Graybill, and D.C. Boes} }
+
+\makeindex
+\makeglossary
+
+\begin{document}
+\setlength{\baselineskip}{0.275in}
+
+%\small
+\ttfamily
+\setcounter{page}{0}
+\pagenumbering{roman}
+{\pagestyle{empty}
+\maketitle
+\tableofcontents
+\typeout{Contents}
+%\listoffigures
+%\typeout{List of Figures}
+%\addcontentsline{toc}{chapter}{List of Figures}
+%\listoftables
+%\typeout{List of Tables}
+%\addcontentsline{toc}{chapter}{List of Tables}
+%\include{data000-pref}
+}
+
+
+\pagenumbering{arabic}
+\roman{chapter}
+
+\chapter %Chapter 1
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch01}
+
+\chapter %Chapter 2
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS \\
+\thispagestyle{empty}
+\input{mgb-ch02}
+
+\chapter %Chapter 3
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch03}
+
+\chapter %Chatper 4
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch04}
+
+\chapter %Chapter 5
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch05}
+
+\chapter %Chapter 6
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch06}
+
+\chapter %Chapter 7
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch07}
+
+\chapter %Chapter 8
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch08}
+
+\chapter %Chapter 9
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch09}
+
+\chapter %Chapter 10
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS \\
+\thispagestyle{empty}
+\input{mgb-ch10}
+
+\chapter %Chapter 11
+\noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
+\thispagestyle{empty}
+\input{mgb-ch11}
+
+\end{document}

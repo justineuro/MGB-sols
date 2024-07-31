@@ -1,0 +1,73 @@
+%mgb-ch11
+%Chapter XI - MGB Solutions
+\begin{enumerate}
+	%11-2
+	\item[2.]  $\mbox{cov}[F_n(B_1),F_n(B_2)] = (1/n)^2\sum\limits_{i}\sum\limits_{j}\mbox{cov}[I_{B_1}(X_i), I_{B_2}(X_j)]$ = $(1/n)\mbox{cov}[I_{B_1}(X), I_{B_2}(X)]$ \\ $=\ (1/n)(P[X\epsilon B_1B_2] - P[X\epsilon B_1][X\epsilon B_2])$.
+	
+	%11-4
+	\item[4.] \begin{enumerate}
+		\item[(a)] $D_1 = \max[U, 1-U]$ where $U$ is uniformly distributed over the interval $(0,1)$. $F_{D_1}(x) = (2x-1)I_{[{\small 1/2},1)}(x) + I_{[1,\infty]}(x)$.
+		\item[(b)] $F_{D_2}(z) = 2(2z-{\small 1/2})^2I_{({\small 1/2,1/3})(z)} + [1-2(1-z)^2]I_{[{\small 1/3, 1})}(z) + I_{[1,\infty]}(z)$.
+		\item[(c)] $D_n = \max\limits_{1\le i\le n} [\left\vert F(Y_i) - \frac{i-1}{n}\right\vert, \left\vert F(Y_i) - \frac{i}{n}\right\vert]$, so $D_n$ is a function of $F(Y_1), \ldots, F(Y_n)$ which are the order statistics from a uniform over $(0,1)$.
+	\end{enumerate}
+	
+	%11-5
+	\item[5.] $E[Y_2] = E[(Y_1+Y_2)/2] + E[\left\vert X_1-X_2\right\vert/2] = (1/2)E[\left\vert X_1-X_2\right\vert] = 1/\sqrt{\pi}$ using the fact that $X_1-X_2\sim N(0,2)$.
+	
+	%11-6
+	\item[6.] Use the same start as in Problem 5.  $X_1-X_2 \sim N(0,2(1\rho))$.
+	
+	%11-7
+	\item[7.] Yes, see Theorem 14 in Chapter VI.
+	
+	%11-10
+	\item[10.] $n$ = 15.
+	
+	%11-11
+	\item[11.] The data seemed to be ordered; you might be leary of the two-sample sign test.
+	
+	%11-13
+	\item[13.] $\mbox{var} = \sum\limits_{j=1}^n\sum\limits_{i=1}^m\sum\limits_{\beta=1}^n\sum\limits_{\alpha=1}^m\mbox{cov}[, I_{[Y_\beta,\infty)}(X_\alpha)]$ \\
+	$=\ mn\ \mbox{var}[I_{[Y,\infty)}(X)]$ \hfill $(j = \beta$ and $i = \alpha)$ \\
+	$+\ nm(m-1)\ \mbox{cov}[I_{[Y,\infty)}(X_1), I_{[Y,\infty)}(X_2)]$ \hfill $(j = \beta$ and $i \neq \alpha)$ \\
+	$+\ n(n-1)m\ \mbox{cov}[I_{[Y_1,\infty]}(X), I_{[Y_2,\infty]}(X)]$ \hfill $(j \neq \beta$ and $i = \alpha)$ \\
+	$+$ zero \hfill \hfill $(j \neq \beta$ and $i \neq \alpha)$ \\
+	$=\ mn\ [P[X\ge Y] - P^2[X\ge Y]]$ \\
+	$+\  nm(m-1)\ (P[X_1\ge Y, X_2\ge Y] - P^2[X\ge Y])$ \\
+	$+\  n(n-1)m\ (P[X\ge Y_1, X\ge Y_2] - P^2[X\ge Y])$ \\
+	$=\ mn(1/4) + mn(m-1)((1/3)-(1/4)) + mn(n-1)((1/3)-(1/4))$ \\
+	$=\ mn(m+n+1)/12$.
+	
+	\newpage
+	%11-14
+	\item[14.] $m=1, n=2$ gives $P[T_x=1]=P[T_x=2]=P[T_x=3]=1/3$. \\
+			$m=1, n=3$ gives $P[T_x=1]=P[T_x=2]=P[T_x=3]=P[T_x=4]=1/4$. \\
+			$m=2, n=1$ gives $P[T_x=3]=P[T_x=4]=P[T_x=5]=1/3$. \\
+			$m=3, n=1$ gives $P[T_x=6]=P[T_x=7]=P[T_x=8]=P[T_x=9]=1/4$. \\
+			$m=n=2$ gives $P[T_x=3]=P[T_x=4]=P[T_x=6]=P[T_x=7]=1/6$ and $P[T_x=5]=2/6$. 
+	
+	%11-15		
+	\item[15.] $U/mn$ is an unbiased estimator of $p$. The second question should read: Is $U/mn$ a consistent estimator of $p$? The answer is yes as can be noted by looking at the intermediate steps in the solution of Problem 13 and letting $m$ and $n$ approach infinity.
+	
+	%11-16
+	\item[16.] \begin{enumerate}
+		\item[(a)] Just algebra noting that $\overline{r}(X)=\overline{r}(Y) = (n+1)/2$ and $\sum r^2(X_i)=\sum r^2(Y_i) = \sum i^2 = n(n+1)(2n+1)/6$.
+		\item[(b)] $S=.9$ and the ordinary correlation coefficient $\approx .962$.
+	\end{enumerate}
+	
+	%11-17
+	\item[17.] The ranks of $X_1, \ldots, X_n$ are the same as the ranks of $F_X(X_1), \ldots, F_X(X_n)$. Likewise for the $Y_j$'s. By the probability integral transfor the distribution of $F_X(X_1), \ldots, F_X(X_n)$ does not depend on $F_X(\cdot)$; likewise for the $Y_j$'s. Hence, the distribution of $S$ (which is a function only of the ranks of $F_X(X_1), \ldots, F_X(X_n)$ and the ranks of $F_Y(Y_1), \ldots, F_Y(Y_n)$) will not depend on $F_X(\cdot)$ and $F_Y(\cdot)$.
+	
+	%11-18
+	\item[18.] $E[S] = 1 - [6n/(n^3-n)]E[D_1^2]$ \\
+	$=\ 1 - [6n/(n^3-n)](E[r^2(X_1)] - 2E[r(X_1)r(Y_1)] + E[r^2(Y_1)])$ \\
+	$=\ 1 - [6n/(n^3-n)]((1/n)\sum i^2 - 2(\sum i/n)^2 + (1/n)\sum i^2)$ \\
+	$=\ 0$ using independence of $r(X_1)$ and $r(Y_1)$ and the fact that  $r(X_1)$ and \\ 
+	\phantom{$=\ 0$}$r(Y_1)$ have discrete uniform distributions. \\
+	$\mbox{var}[S] = [36/(n^3-n)^2]\sum\sum \mbox{cov}[D_i^2,D_j^2] = [36/(n^3-n)](n\ \mbox{var}[D_1^2]) \,+\, n(n-1)\ \mbox{cov}[D_1^2,D_2^2])$ \\
+	$=\ [36/(n^3-n)^2](nE[D_1^4] -n(E[D_1^2])^2 +n(n-1)E[D_1^2D_2^2] -n(n-1)E[D_1^2]E[D_2^2])$ \\
+	$=\ [36/(n^3-n)^2](n\sum\limits_{i}\sum\limits_{j}(i-j)^4(1/n^2) + n(n-1)\sum\limits_{i}\sum\limits_{j}\sum\limits_{\alpha\ne i}\sum\limits_{\beta\ne j}(i-j)^2(\alpha-\beta)^2(1/n^2(n-1)^2)$ \\
+	$\phantom{=\ } - n^2[\sum\limits_{i}\sum\limits_{j}(i-j)^2(1/n^2)]^2)$ \\
+	$=\ 1/(n-1)$. 
+	
+\end{enumerate}

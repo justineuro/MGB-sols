@@ -1,0 +1,260 @@
+%mgb-ch05
+%Chapter V - MGB Solutions
+\begin{enumerate}
+	%5-1
+	\item[1.] \begin{itemize}
+		\item[(a)] $\mbox{cov}[X_1+x_2, X_2+X_3]=\sigma^2; \mbox{var}[X_1+X_2]=\mbox{var}[X_2+X_3]=2\sigma^2;$ \\
+		hence $\rho[X_1+X_2, X_2+X_3] = 1/2$.
+		\item[(b)] $(\sigma_2^2-\sigma_1^2)/(\sigma_1^2+\sigma_2^2)$ 
+		\item[(c)] 1/2.
+	\end{itemize}
+
+	%5-3
+	\item[3.] $F(x)I_{[0,\infty)}(x)$.
+	
+	%5-4
+	\item[4.] \begin{enumerate}
+		\item[(a)] $P[X=x] = \dfrac{(M-K)_{x-1}}{(M)_{x-1}} \cdot \dfrac{K}{M-x+1}$ for $x=1,\ldots, M-K+1$.
+		\item[(b)] $P[Z=z] = \dfrac{\displaystyle {K\choose r-1}{M-K\choose z-r}}{\displaystyle{M\choose z-1}} \cdot \dfrac{\displaystyle {K-r+1\choose 1}}{\displaystyle{M-z+1\choose 1}}$, for $z=r,\ldots, M-k+r.$ 
+		\item[(c)] $\begin{array}{c||c|c|c|c|c}
+			(x,y) & (1,2) & (1,3) & (2,1) & (3,1) & (4,1) \\ \hline
+			f_{X,Y}(x,y) & \dfrac{2}{5}\cdot\dfrac{3}{4} & \dfrac{2}{5}\cdot\dfrac{1}{4} & \dfrac{3}{5}\cdot\dfrac{2}{4} & \dfrac{3}{5}\cdot\dfrac{2}{4}\cdot\dfrac{2}{3} & \dfrac{3}{5}\cdot\dfrac{2}{4}\cdot\dfrac{1}{3}
+		\end{array}$
+	\end{enumerate}
+
+	%5-5
+	\item[5.] According to the definition of expectation, $E[X_1]$ does not exist; however, there is no harm in saying $E[X_1]=\infty,\ E[Y_1] = n/(n-1)$ for $n>1$.
+
+	%5-6
+	\item[6.] \begin{enumerate}
+		\item[(a)] Since $X\le \max[X,Y], E[X]\le E[\max[X,Y]]$; similarly, \\
+			$E[Y]\le E[\max[X,Y]]$,hence $\max[E[X],E[Y]]\le E[\max[X,Y]]$.
+		\item[(b)] $\max[X,Y]+\min[X,Y] = X + Y$. 
+	\end{enumerate}
+
+	%5-7
+	\item[7.] \begin{enumerate}
+		\item[(a)] Note that $X$ and $Y$ are independent and uniformly distributed. Apply the corollary of Theorem 3 on page 180.
+		\item[(b)] Theorem 8 will do it.
+	\end{enumerate}
+	
+	%5-8
+	\item[8.] The cdf of $Z=\max[X,Y]$ is given by \\
+			$(1-e^{-\lambda_1z})(1-e^{-\lambda_2z})I_{(0,\infty)}(z)$ \\
+			so $\displaystyle E[Z] = E[\max[X,Y]] = \int_0^1 (1-F_Z(z))\ dz = \int_{0}^{1} \left(e^{-\lambda_1z}+e^{-\lambda_2z}-e^{-(\lambda_1+\lambda_2)z}\right)\ dz = \dfrac{1}{\lambda_1} + \dfrac{1}{\lambda_2} - \dfrac{1}{\lambda_1+\lambda_2}$ 
+		
+	%5-9	
+	\item[9.] $X_1-X_2\sim N(0,2)$. The distribution of $(X_2-X_1)^2$ can be found using Example 19.  Similarly, for $Y_2-Y_1$ and $(Y_2-Y_1)^2$.   They are independent so use Equation (26) to find the distribution of $Z^2 = (X_2-X_1)^2 + (Y_2-Y_1)^2$.
+	
+	%5-10
+	\item[10.] \begin{enumerate}
+		\item[(a)] Let $Y_n$ be the life of the fuse that lasts the longest. Find $n$ such that $P[Y_n> .8]=.95.\ n=14$ will do.
+		\item[(b)] 9/10.
+	\end{enumerate}
+	
+	%5-11
+	\item[11.] $\Phi(\cdot)$.
+	
+	%5-12
+	\item[12.] \begin{enumerate}
+		\item[(a)] This problem is starred, not because it is difficult, but because it is messy. The possible values of $Z=X/(X+Y)$ are zero (if $X=0$), one (if $X>0$ and $Y>0$), and $a/b$ where $a$ and $b$ are positive integers and $a<b$. $P[Z = (a/b)] = \sum P[X=x; Y=y]$ where the summation is over all pairs $(x,y)$ for which $x$ and $y$ are positive integers and $y=x(b-a)/a$.
+		\item[(b)] $m_{X,X+Y}(t_1,t_2) = E[e^{t_1X+t_2(X+Y)}] = m_{X,Y}(t_1+t_2, t_2).$
+	\end{enumerate}
+
+	%5-13
+	\item[13.] \begin{enumerate}
+		\item[(a)] Write $E[e^{Y_1t_1+Y_2t_2}]$ in terms of a double integral involving the joint distribution of $X_1$ and $X_2$. Perform the integration by separating the double integral, completing the square, and expressing in terms of integrals the normals.
+		\item[(b)] Use the joint moment generating function given in (a).
+	\end{enumerate}
+	
+	%5-14
+	\item[14.] $E[e^{XYt}] = E[E[e^{XYt}\vert X]] = E[e^{(1/2)Y^2t^2}] = 1/\sqrt{1-t^2}$.
+	
+	%5-15
+	\item[15.] \begin{itemize}
+		\item[(a)] Use the moment generation function technique to argue that they are independent standard normals.
+	\end{itemize}
+	
+	%5-16
+	\item[16.] Let $\displaystyle S = \sum_{1}^{16}X_i$ = weight of beans in box. Assume that the $X_i$'s are independent. 
+	\begin{enumerate}
+		\item[(a)] mean = 16$^2$ ounces an variance = 16
+		\item[(b)] $P[S> 250] = 1-\Phi\left(\dfrac{250-16(16)}{4}\right) = \Phi(3/2)$
+		\item[(c)] Let $Z$ = number of underweight bags. \\
+					$Z\sim \mbox{bin}(16,1/2)$, so $P[Z\le z] = \displaystyle\sum_{0}^{2}{16\choose x}(1/2)^{16}$. 
+	\end{enumerate}
+	
+	%5-17
+	\item[17.] \begin{enumerate}
+		\item[(a)] Let $Z$ = number of numbers less than 1/2. $Z\sim\mbox{bin}(10,1/2).\ P[Z=5]=\displaystyle{10\choose 5}(1/2)^5$.
+		\item[(b)] $E[Z]=5$.
+		\item[(c)] 1/2 using a symmetry argument.
+	\end{enumerate}
+	
+	\newpage
+	%5-18
+	\item[18.] \begin{enumerate}
+		\item[(a)] Both are $n\lambda$.
+		\item[(b)] $\Phi(-2)$
+	\end{enumerate}
+
+	%5-19
+	\item[19.]  \begin{enumerate}
+		\item[(a)] Buy $n$ bulbs. Assume that the lifetime are independent(which may not be realistic since the bulbs are burning simultaneously).  Want $n$ such that $.95=P[Y_n> 1000]=1-[1-\exp(-10)]^n$.
+		\item[(b)] Buy $n$ bulbs.  Want $n$ such that $P[S_n> 1000]=.95.\ S_n$ has a gamma distribution with parameters $n$ and $.01$.  Using Equation (33) of Chapter III and a Poisson table $n\approx 16$ is obtained.
+	\end{enumerate}
+
+	%5-20
+	\item[20.] Use the moment generating function technique.
+		\begin{enumerate}
+			\item[(a)] gamma with parameters $nr$ and $\lambda$.
+			\item[(b)] gamma with parameters $\sum r_i$ and $\lambda$.
+		\end{enumerate}
+
+	%5-21
+	\item[21.] \begin{enumerate}
+		\item[(a)] negative binomial with parameters $n$ and $p$
+		\item[(b)] negative binomial starting at $n$ with parameters $n$ and $p$
+		\item[(c)] negative binomial with parameters $nr$ and $p$
+		\item[(d)] negative binomial with parameters $\sum r_i$ and $p$
+	\end{enumerate}
+
+	%5-22
+	\item[22.] $Z$ can be expressed as $\displaystyle\sum_{1}^{Y}X_i$ where $X_i$ is the money received from the $i$th location where oil is found. $Z=0$ if $Y=0$. Model by assuming the $X_i$'s and $Y$ are independent. $Y$ has a binomial distribution with $n=10$ and $p=1/5$, and the $X_i$'s are independent and identically distributed exponential random variables with mean 50000. 
+	\begin{enumerate}
+		\item[(a)] $E[Z] = E[E[Z\vert Y]] = E[Y]E[X] = \$100,000$.
+		\item[(b)] $P[Z>100,\!000\vert Y=1] = e^{-2}$. \\
+		$P[Z>100,\!000\vert Y=2] = 3e^{-2}$.
+		\item[(c)] $P[Z>100,\!000] = \displaystyle\sum_{y=0}^{10}P[Z>100,\!000\vert Y=y]P[Y=y] = \sum_{y=1}^{10}\left(\sum_{0}^{y-1}\dfrac{e^{-2}2^j}{j!}\right){10\choose y}\left(\dfrac{1}{5}\right)^y\left(\dfrac{4}{5}\right)^{10-y}$ using $Z$ given $Y=y$ is a gamma distributed and Equation (33) of Chapter III. \\
+		$P[Z>100,\!000]\approx .4$. 
+	\end{enumerate}
+
+	%5-23
+	\item[23.] See 24.
+
+	\newpage
+	%5-24
+	\item[24.] $P[X_1=x_1,\ldots,X_k=x_k\vert X_1+\cdots+X_{k+1}=n] = \dfrac{P[X_1=x_1,\ldots,X_k=x_k;\ X_1+\cdots+X_{k+1}=n}{P[X_1+\cdots+X_{k+1}=n]}$ \\ 
+	$=\dfrac{
+	\dfrac{e^{-\lambda_1}\left(\lambda_1\right)^{x_1}}{x_1!} \cdot 
+	\dfrac{e^{-\lambda_2}\left(\lambda_2\right)^{x_2}}{x_2!} \cdot\ \cdots\ \cdot
+	\dfrac{e^{-\lambda_k}\left(\lambda_k\right)^{x_k}}{x_k!} \cdot 
+	\dfrac{e^{-\lambda_{k+1}}\left(\lambda_{k+1}\right)^{x_{k+1}}}{x_{k+1}!} \cdot	
+	}{\dfrac{e^{-\sum \lambda_j}\left(\sum \lambda_j\right)^n}{n!}}$
+	
+	%5-25
+	\item[25.] Cauchy.
+	
+	%5-26
+	\item[26.] $Y$ has a lognormal distribution. $E[Y]=E[e^X]=m_X(1)$, the moment generating function of $X$ evaluated at 1. Also $E[Y^2]=E[e^{2x}]=m_X(2)$.
+	
+	%5-27
+	\item[27.] Exponential with parameter one.
+	
+	%5-28
+	\item[28.] Beta with parameter $b$ and $a$.
+	
+	%5-29
+	\item[29.] Write $Y=1/X$ then $f_Y(y)=y^{-2}I_{(1,\infty)}(y)$.
+	
+	%5-31
+	\item[31.] Exponential with parameter one.
+	
+	%5-32
+	\item[32.] Beta with parameters reversed.
+	
+	%5-34
+	\item[34.] Same as $X$.
+	
+	%5-36
+	\item[36.] Exponential with parameter one.
+	
+	%5-38
+	\item[38.] $P[Y-X=z] = [p/(2-p)]q^z\,I_{\{0,1,2,\ldots\}}(z) + [p/(2-p)]q^{-z}\,I_{\{-1,-2,\ldots\}}(z)$.
+	
+	%5-39
+	\item[39.] Write $V=Y-X$, then $f_V(v)=(\lambda/2)e^{-\lambda\vert v\vert}$.
+	
+	%5-40
+	\item[40.] One way of doing it is to transform to, say, $U=X, V=Y, W=XY/Z$, find the $U, V, W$, integrate out $u$ and $v$ and get \\
+	$f_W(w) = \left(\dfrac{1}{4}-\dfrac{1}{2}\ln w\right)I_{(0,1)}(w) + \dfrac{1}{4w^2}I_{[1,\infty]}(w)$.
+	
+	%5-41
+	\item[41.] Write $Z=X+Y.\ f_Z(z) = [2z^2-(2/3)z^3]I_{(0,1)}(z) + [(8/3)-2z^2+(2/3)z^3]I_{(1,2)}(z)$. \\
+	$f_Z(z)$ is symmetric about $z=1$.
+	
+	%5-42
+	\item[42.] This is starred not because it is difficult, but because the answer, which can be expressed in terms of a Bessel function, is not simple. \\
+	$P[Y-X=z] = \displaystyle\sum_{x=0}^{\infty}P[Y-X=z\vert X=x]P[X=x] = \sum_{x=\max[0,-z]}^{\infty} P[Y=x+z]P[X=x]$ for $z$ an integer.
+	
+	\newpage
+	%5-44
+	\item[44.] Let $X$ have parameters $a$ and $b$ and $Y$ have parameters $c$ and $b=d=1$ and $a=c+1$ will suffice.
+	
+	%5-46
+	\item[46.] The cdf technique works. $2z^3e^{-z^2}I_{(0,\infty)}(z)$.
+	
+	%5-47
+	\item[47.] $X$ and $Y$ are independent; hence it suffices to find the marginal distribution of $X^2$ and $Y^2$.
+	
+	%5-49
+	\item[49.] The transformation is not one-to-one. See Example 19.
+	
+	%5-50
+	\item[50.] The distribution of $X+Y$ is triangular and given Example 4, 
+	$P[Z\le z] = P[X+Y\le z; X+Y\le 1] + P[X+Y-1\le z; X+Y>1] = P[X+Y\le z] + P[1<X+Y\le 1+z] = z$ for $0<z<1$. That is $Z$ is uniformly distributed over $(0,1)$.
+	
+	%5-53
+	\item[53.] $f_{Y_1,Y_2}(y_1,y_2) = \lambda^2y_2e^{-\lambda y_2}[1/(1+y_1)^2]I_{(0,\infty)}(y_1)I_{(0,\infty)}(y_2)$.
+	
+	%5-54
+	\item[54.] The transformation is not one-to-one.  Use Theorem 14. $Y_1$ has an exponential distribution with parameter 1/2 and $Y_2$ has a standard Cauchy distribution.  They are independent.	
+	
+	%5-57
+	\item[57.] \begin{itemize}
+		\item[(a)] $E[X+Y] = E[E[X+Y\vert Z]] = 1$.
+		\item[(b)] $\displaystyle f_{X,Y}(x,y) = \int f_{X,Y\vert Z}(x,y\vert z)f_Z(z)\ dz =I_{(0,1)}(x)I_{(0,1)}(y)$. Are independent.
+		\item[(c)] $\displaystyle f_{X\vert Z}(x\vert z) = \int f_{X,Y\vert Z}(x,y\vert z)\ dy = [z + (1-z)(x+1/2)]I_{(0,1)}(x)$ which depends on $z$ so $X$ and $Z$ are not independent.
+		\item[(d)] Straightforward transformation using distribution of $X$ and $Y$ given in (b).
+		\item[(e)] $\displaystyle P[\max[X,Y]\le u\vert Z=z] = P[X\le u, Y\le u\vert Z=z] = \int_{0}^{u}\int_{0}^{u}[z+(1-z)(x+y)]\ dx\ dy = zu^2+(1-z)u^3$ for $0<u<1$.
+		\item[(f)] $\displaystyle \int f_{(X,Y)\vert Z}(x,s-x\vert z)\ dx = [z+(1-z)s][sI_{(0,1)}(s)+(2-s)I_{[1,2]}(s)]$ 
+	\end{itemize}
+
+	%5-58
+	\item[58.] Assume independence of functioning components and capitalize in the forgetfulness of the exponential. 
+	\begin{enumerate}
+		\item[(a)] Let $Y=Y_3+Y_2+Y_1$ be the life of system, where $Y_j$ is that part of the life when exactly $j$ components are functioning. $Y_3$ is the minimum of three independent exponential random variables each with rate parameter $\lambda/3$, so $Y$ has an exponential distribution with rate parameter $\lambda$. Similarly for $Y_2$ and $Y_1$. \\
+
+
+	\newpage
+		Furthermore, the $Y_j$'s are independent, hence $Y$ has a gamma distribution with parameters 3 and $\lambda$.		
+		
+		\item[(b)] Same as answer (a).
+	\end{enumerate}
+
+	%5-59
+	\item[59.] $Z$ is the lifetime of the system. $Z$ has cdf $(1 -2e^{-2z} + e^{-3z})I_{(0,\infty)}(z)$, mean 2/3, and variance 1/3.
+
+	%5-60
+	\item[60.] Gamma with parameters two and two.
+
+	%5-61
+	\item[61.] Follow the hint and use Equation (33) of Chapter IV for the joint moment generating function of $X$ and $Y$. $(U,V) = (aX + bY, cX +dY)$ has a bivariate normal distribution with parameters. \\
+	$\mu_U = a\mu_X + b\mu_Y,\ \mu_V = c\mu_X + d\mu_Y$ \\
+	$\sigma^2_U = a^2\sigma^2_X + b^2\sigma^2_Y + 2ab\sigma_X\sigma_Y\rho_{X,Y}$ \\
+	$\sigma^2_V = c^2\sigma^2_X + d^2\sigma^2_Y + 2cd\sigma_X\sigma_Y\rho_{X,Y}$ \\
+	$\rho_{U,V} = \sigma_U\sigma_V[ac\sigma^2_X + bd\sigma^2_Y + (bc+ad)\sigma_X\sigma_Y\rho_{X,Y}]$. \\
+	Can you choose $a, b, c$, and $d$ to make $U$ and $V$ independent standard normals?
+	
+	%5-62
+	\item[62.] \begin{itemize}
+		\item[(b)] $E[Z]=0$ and $\mbox{var}[Z]=2/3$ using Theorem 7 of Chapter IV, page 159.
+		\item[(c)] This is starred because the answer is not simple. Use Remark on page 149 and get \\
+		$\displaystyle F_Z(z) = \int P[Z\le z\vert U=u]f_U(u)\ du$; now \\
+		both $P[Z\le z\vert U=u]$ and $f_U(u)$ are known and the problem is reduced to one of integration. \\
+		$\displaystyle f_Z(z) = \int_{0}^{1}\phi\left(\dfrac{z}{\sqrt{u^2+(1-u)^2}}\right) \dfrac{1}{\sqrt{u^2+(1-u)^2}}\ du$
+	\end{itemize}
+	
+	\newpage
+	
+\end{enumerate}

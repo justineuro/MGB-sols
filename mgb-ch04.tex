@@ -1,0 +1,185 @@
+%mgb-ch04
+%Chapter IV - MGB Solutions
+\begin{enumerate}
+	%4-1
+	\item[1.] (a) True $\quad$(b) False $\quad$(c) True 
+	
+	%4-2
+	\item[2.] \begin{enumerate}
+		
+		\item[(a)] $\displaystyle E[X]=\int_0^\infty [1-F_X(z)]\ dz - \int_{-\infty}^0 F_X(z)\ dz < \int_0^\infty [1-F_Y(z)]\ dz - \int_{-\infty}^0 F_Y(z)\ dz = E[Y]$ \\ 
+		Using Eq. 6 of Chapter II (Page 65).
+		
+		\item[(b)] There are many counterexamples.  For example, define  
+		\begin{align*} F_X(x) &= (1/2)I_{[0,1]}(x) + I_{[1,\infty]}(x)\ and \\ 
+		F_Y(y) &= (3/4)I_{[0,4)})(y) + I_{[4,\infty]}(y).
+		\end{align*} 
+		
+		\item[(c)] True.$\quad$(d) False.$\quad$(e) True.
+		
+		\item[(f)] $F_X(x) = P[X\le z] = P[X+1\le z+1] = P[Y\le z+1] = F_Y(z+1)$
+	\end{enumerate}
+	
+	%4-3
+	\item[3.] Yes.
+	
+	%4-4
+	\item[4.] (b) 1/4
+	
+	%4-5
+	\item[5.] \begin{enumerate}
+		
+		\item[(a)] 1/36
+		
+		\item[(b)] For $0< x< 1,\ f_{Y\vert X}(y\vert x) = [I_{(x,1)}(y)]/(1-x).$
+
+		\end{enumerate} 
+	
+	%4-6
+	\item[6.] (b) 1/4 \\
+	(c) 1/6
+	
+	%4-7
+	\item[7.] (b) No
+	
+	%4-8
+	\item[8.] E[Y] = E[E[Y$\vert$X]] = 1 + p
+	
+	%4-10
+	\item[10.] ${}$\vspace{-7.0ex}
+	\begin{align*} P[X=Y] &= \sum_{j=0}^{\infty} P[X=Y\vert Y=j]P[Y=j] \\ 
+	&= \sum_{j=0}^{\infty} P[X=j\vert Y=j]P[Y=j] \\ 
+	&= \sum_{j=0}^{\infty} P[X=j]P[Y=j]\ (using\ independence) \\
+	&= \sum_{j=0}^{\infty} p^2(1-p)^{2j} \;=\; p/(2-p).
+	\end{align*}
+	
+	%4-11
+	\item[11.] (a) No. (b) Yes. (c) No. (d) Yes.
+	
+	\newpage
+	%$4-12
+	\item[12.] ${}$\vspace{-7.0ex}
+	\begin{align*} F_X(x) + F_Y(y) -1 &\le P[X\le x] + P[Y\le y] - P[X\le x\ or\ Y\le y]  \\ 
+	&= P[X\le x; Y\le y] \;=\; F_{X,Y}(x,y). 
+	\end{align*} 
+	$F_{X,Y}(x,y) = P[X\le x; Y\le y] \le P[X\le x] = F_X(x)$; also \\
+	$F_{X,Y}(x,y) \le F_Y(y).$
+	
+	%4-14
+	\item[14.]  ${}$\vspace{-7.0ex}\begin{itemize}
+		\item[(d)] $P[Y-\alpha-\beta\mu\le z] = P[\alpha+\beta X - \alpha-\beta\mu\le z] = P[X-\mu\le z/\beta] = P[-(X-\mu)\le z/\beta]=$ \\
+		$P[-(Y-\alpha-\beta\mu) \le z].$ 
+	\end{itemize}
+	
+	%4-16
+	\item[16.]  ${}$\vspace{-7.0ex} \begin{itemize}
+		\item[(a)] Since $f_X(z) =f_Y(z) = I_{(0,1)}(z)$, X and Y are independent if and only if  $\alpha=0$. \\
+				$\displaystyle cov[X,Y] = -\alpha\int_0^1\int_0^1(x-1/2)(y-1/2)(1-2x)(1-2y)\ dx\ dy = 0$ if and only if $\alpha = 0.$
+		\item[(b)] E[Area] = E[XY] = cov[X,Y] + 1/4
+		\item[(c)] $P[2X < 1] = 1/2.$
+		\item[(d)] Length of perimeter = $2(X + \sqrt{X^2+Y^2})$
+	\end{itemize}
+	
+	%4-17
+	\item[17.] ${}$\vspace{-7.0ex} \begin{itemize}
+		\item[(b)] 9/16
+		\item[(c)] $E[Y_1] = 15/8; E[Y_2] = 25/8;$ \\ $var[Y_1] = 70/16 - (15/8)^2$ and $var[Y_2] = 170/16 - (25/8)^2$
+		\item[(e)] 5/11
+	\end{itemize}
+
+	%4-18
+	\item[18.] ${}$\vspace{-7.0ex} \begin{itemize}
+		\item[(c)] 3/4\;\; (d) Solve for $m$ in $1 - e^{-m} - me^{-m} = 1/2.$ 
+		\item[(e)] $1-e^{-1}$ \;\; (f) 0
+	\end{itemize}
+
+	%4-19
+	\item[19.] ${}$\vspace{-7.0ex} \begin{itemize}
+		\item[(a)] Do (b) first.
+		\item[(b)] $f_X(z) = f_Y(z) = ze^{-z}I_{(0,\infty)}(z).$
+		\item[(c)] $1 + (\pi/2)$ 
+		\item[(d)] $1 - 4e^{-2} - e^{-4}.$ 
+		\item[(e)] 1/2.
+		\item[(f)] $f_X(x)f_Y(y).$
+	\end{itemize}
+	
+	\newpage
+	%4-20
+	\item[20.] ${}$\vspace{-7.0ex} \begin{align*}
+		(a)\quad P[\vert X + Y\vert \le 2\vert X\vert] &= \displaystyle \iint\limits_{\vert x+y\vert \le \vert x\vert}f(x)f(y)\ dx\ dy \\
+		&= \displaystyle \int_0^\infty\left(\int_{-3x}^x f(y)\ dy\right) f(x)\ dx + \int_{-\infty}^0 \left(\int_x^{-3x} f(y)\ dy\right) f(x)\ dx \\
+		&=  \displaystyle 2\int_0^\infty\left(\int_{-3x}^{-x} f(y)\ dy\right) f(x)\ dx + 2\int_0^{\infty} \left(\int_{-x}^x f(y)\ dy\right) f(x)\ dx\; \text{(by symmetry)} \\
+		&= \displaystyle 2\int_0^\infty\left(\int_{-3x}^{-x} f(y)\ dy\right) f(x)\ dx + 1/2 > 1/2.
+		\end{align*}
+
+	%4-21
+	\item[21.] Note that $E[X-Y] = E[E[X\vert Y]] - E[Y] = 0,$ so \\ $var[X-Y] = E[(X-Y)^2,]$ but $E[(X-Y)^2] = E[X^2] - 2E[XY] + E[Y^2] = $ \\ 
+	$E[XE[Y\vert X]] - 2E[XY] + E[YE[X\vert Y]] = 0.$
+	
+	%4-22
+	\item[22.] $P[\lcap\limits_{j=1}^mA_j] = 1 - P[\overline{\lcap\limits_{j=1}^mA_j}] = 1 - P[\lcup\limits_{j=1}^m\overline{A_j}] \ge 1 - \sum\limits_{j=1}^m P[\overline{A_j}] \ge 1 - t^{-2}.$
+	
+	%4-23
+	\item[23.] $(c)\quad f_X(x_0)/[1-F_X(x_0)]$
+	
+	%4-25
+	\item[25.] Let $Y$ denote $A$'s score and $Z$ denote $B$'s score.  Then $X = Y -Z$.  $Z$ is uniformly distributed over $(0,3)$. \\
+	$P[X\!\le\!x] = P[X\!\le\!x \vert Y\!=\!1]p + P[X\!\le\! x\vert Y\!=\!2](1-p) = P[1-Z\le x]p + P[2-Z\le x](1-p)$. Etc.
+	
+	%4-30
+	\item[30.] $\displaystyle P[X=x] = \sum_{y=x}^{\infty}P[X=x\vert Y=y]P[Y=y] =  \sum_{y=x}^{\infty}{y \choose x}p^xq^{y-x}e^{-\lambda}\lambda^y/y! = (\lambda p)^xe^{-\lambda p}/x!$; i.e., $X$ has a Poisson distribution with parameter $\lambda p$.
+	
+	%4-32
+	\item[32.] \begin{itemize}
+		\item[(a)] $Y\vert X\!=\!5\sim N(10,25(1-\rho^2))$, so $.954 = P[4\!<\!Y\!<\!16\vert X\!=\!5]\!=\!\Phi\!\left(\dfrac{6}{5\sqrt{1-\rho^2}}\right) \!-\! \Phi\!\left(\dfrac{-6}{5\sqrt{1-\rho^2}}\right)$, which implies $\dfrac{6}{5\sqrt{1-\rho^2}} = 2$, hence $\rho = 4/5$.
+ 		\item[(b)] This will be easy after the next chapter when we	learn that $X + Y \sim (15,26)$, giving $P[X+Y\le 16]$ = $\Phi\left(\dfrac{16-15}{\sqrt{26}}\right)$ = $\Phi\left(1/\sqrt{26}\right)$.  For now, $\displaystyle P[X+Y\le 16]$ = \newline $\displaystyle \iint\limits_{x+y\le 16}\phi_{5,1}(x)\phi_{10,25}(y)\ dx\ dy =  \iint\limits_{u+v\le 1}\phi(u)\phi(v)\ du\ dv = \mbox{(using\ symmetry)}$ = \newline $\displaystyle\int_{-\infty}^{\infty}\int_{-\infty}^{1/\sqrt{26}} \phi(u)\phi(v)\ du\ dv$ = $\Phi\left(1/\sqrt{26}\right)$.	
+	\end{itemize} 
+	
+	%4-34
+	\item[34.] \begin{itemize}
+		\item[(a)] Multinomial with $k + 1 = 4$; $P[\mbox{no heads}] = 1/8$; $P[\mbox{one head}] = 3/8$; etc.
+	\end{itemize}
+	
+	\newpage
+	%4-35
+	\item[35.] \begin{itemize}
+		\item[(a)] $P[X=x,Y=y] = \dfrac{\displaystyle {4\choose x}{4\choose y}{44\choose 6-x-y}}{\displaystyle {52\choose 6}}$
+	\end{itemize}
+
+	%4-36
+	\item[36.] \begin{itemize}
+		\item[(a)] $(26-9x)/(9-3x)$
+		\item[(e)] $E[XY\vert X=x] = xE[Y\vert X=x]$.
+	\end{itemize}
+	
+	%4-40
+	\item[40.] No
+	
+	%4-42
+	\item[42.] $m_{Y\vert X=x}(t) = E[e^{tY}\vert X=x]$. $m_Y(t) = E[e^{tY}] = E[E[e^{tY}\vert X]] =E[m_{Y\vert X}(t)]$.
+	
+	%4-43
+	\item[43.] (b) 1$\qquad$ (c) $\rho_{X,Y}=1/2\qquad$ (d)$f_X(x)f_Y(y)$ 
+	
+	%4-44
+	\item[44.] \begin{itemize}
+		\item[(a)] $E[Y] = E[E[Y|X]] = E[X+1/2] = 1$
+		\item[(b)] $cov[X,Y] = 1/12$
+		\item[(c)] 1/4
+	\end{itemize}
+
+	%4-45
+	\item[45.] Special case of Problem 46.
+	
+	%4-46
+	\item[46.] The joint density of $X$ and $Y$ might have two, three, or four mass points. Consider the case of four mass points. Let $p_{ij} = P[X=x_i; Y=y_j]$ for $i,j=1,2$, where $x_1<x_2$ and $y_1<y_2$. \newline
+	$\mbox{Write }p_{1.} = p_{11} + p_{12} = P[X=x_1]$, \\
+	$\phantom{\mbox{Write }}p_{2.} = p_{21} + p_{22} = P[X=x_2]$, \\
+	$\phantom{\mbox{Write }}p_{.1} = p_{11} + p_{21} = P[Y=y_1]$, and \\
+	$\phantom{\mbox{Write }}p_{.2} = p_{12} + p_{22} = P[Y=y_2]$. \\
+	Let $U = (X-x_1)/(x_2-x_1)$ and $V = (Y-y_1)/(y_2-y_1)$. \\
+	Now $\mbox{cov}[X,Y]=0$ if and only if $\mbox{cov}[U,V]=0$ and $X$ and $Y$ are independent if and only if $U$ and $V$ are independent. \\
+	$\mbox{cov}[U,V] = E[UV]-E[U]E[V] = p_{22} = p_{2.}p_{.2}$. \\
+	$\mbox{cov}[U,V]=0$ implies $p_{22}=p_{2.}p_{.2}$ which in turn implies independence. 
+	
+\end{enumerate}

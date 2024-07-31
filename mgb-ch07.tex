@@ -1,0 +1,243 @@
+%mgb-ch07
+%Chapter VII - MGB Solutions
+\begin{enumerate}
+	%7-1
+	\item[1.] Let $B$ = number of black balls and \\
+	$W$ = number of white balls.
+	$R = B/W$. Set $p = B/(B+W)$, so $R = p/(1+p)$.
+	\begin{enumerate}
+		\item[(a)] Let $X_i=1$ if black ball on $i$th draw and $X_i=0$ otherwise.  MLE of $p=\sum X_i/n = \overline{X}$ which implies MLE of $R = \overline{X}/(1-\overline{X})$. 
+		\item[(b)] $X_i$ has a geometric distribution. $L(p) = p^n(1-p)^{\sum x_i}$.  MLE of $p=1/(1+\overline{X})$, so MLE of $R = 1/\overline{X}$.
+	\end{enumerate}
+	
+	%7-2
+	\item[2.] MLE of $p_{ij}$ is $N_{ij}/n$.
+	
+	%7-4
+	\item[4.] MLE of $\mu_1 - \mu_2$ is $\overline{X}_1-\overline{X}_2$. \\
+	$\mbox{var}[\overline{X}_1-\overline{X}_2] = \sigma_1^2/n_1 + \sigma_2^2/n_2.\ n_1\approx n[\sigma_1(\sigma_1+\sigma_2)]$.
+	
+	%7-5
+	\item[5.] MLE of $a = (\overline{X}_1 + \overline{X}_2 + \overline{X}_3 + \overline{X}_4)/4$; \\
+	MLE of $b = (\overline{X}_1 + \overline{X}_2 - \overline{X}_3 - \overline{X}_4)/4$; and \\
+	MLE of $c = (\overline{X}_1 + \overline{X}_3 - \overline{X}_2 - \overline{X}_4)/4$.
+	
+	%7-7
+	\item[7.] Let $r$ denote the radius of the circle. Let $X_i$ denote the $i$th measurement. \\
+	$X_i = r +E_i$ where $E_i$ is the $i$th error of measurement. $E_i\sim N(0,\sigma^2)$. \\
+	Now $\mbox{var}[X_i] = \mbox{var}[E_i] = \sigma^2$ so $S^2 = \sum(X_i-\overline{X})^2/(n-1)$ is an unbiased estimator of $\sigma^2$. $(\pi/n)\displaystyle \sum_{j=1}^n(X_j-S^2)$ is an unbiased estimator of the area $= \pi r^2$. 
+	
+	%7-9
+	\item[9.] Show that $P_\theta[\vert(X_1+X_2)/2-\theta\vert < \vert X_1-\theta\vert] > 1/2$ for all $\theta$. Make the transformation $U_1 = X_1-\theta$ and $U_2 = X_2-\theta$ and it suffices to show that $P[\vert U_1+U_2\vert < 2\vert U_1\vert] > 1/2$ where $U_1, U_2$ is a random sample of size two from the Cauchy density $1/\pi[1+x^2]$. \\
+	See Problem 20 of Chapter IV. 
+	
+	%7-10
+	\item[10.] \begin{enumerate}
+		\item[(a)] $\sum(X_i - \hat{\theta}) = 0$ implies $\hat{\theta}=\overline{X}$.
+		\item[(b)] $\sum(X_i - \hat{\theta})^2$ is minimized for $\hat{\theta}=\overline{X}$.
+	\end{enumerate}
+	
+	%7-11
+	\item[11.] (b) $\mbox{var}[\sum a_ix_i] = \sigma^2(\sum a_i) = \sigma^2[\sum(a_i-1/n)^2 + 1/n]$.
+	
+	%7-12
+	\item[12.] (b) MLE of $\theta$ is $\min[1/2, \overline{X}]$.
+	  
+	 \newpage
+	 %7-17
+	 \item[17.] \begin{enumerate}
+	 	\item[(a)] $X$ is sufficient. $E[X]=0$ for all $\theta$ so $X$ is not complete.
+	 	\item[(b)] Yes; yes.
+	 	\item[(c)] $\sum \vert X_i\vert/n$.
+	 	\item[(d)] Yes. (e) Yes.
+		\item[(f)] Yes.	
+	\end{enumerate}
+	
+	%7-18	
+	\item[18.] (b) Yes.
+	
+	%7-19
+	\item[19.] \begin{enumerate}
+		\item[(c)] Middle observation for add sample size and anything between two middle observations for even sample size.
+		\item[(d)] No.
+	\end{enumerate}
+	
+	%7-21
+	\item[21.] In computing the means and mean-squared errors use the calculations in Problem 33 of Chapter VI.
+	\begin{enumerate}
+		\item[(a)] $T_1 = 2\overline{X}$. MSE is $\theta^2/3n$.
+		\item[(b)] $T_2 = Y_n$. MSE is $2\theta^2/[(n+1)(n+2)]$.
+		\item[(c)] $T_3 = [(n+2/(n+1))]Y_n.$ MSE is $\theta^2/(n+1)^2$.
+		\item[(d)] $T_4 = [(n+1)/n]Y_n.$ MSE is $\theta^2/[n(n+2)]$.
+		\item[(e)] MSE is $2\theta^2/(n+1)(n+2)$.
+		\item[(g)] $Y_n^2/12$.
+	\end{enumerate}
+	
+	%7-22
+	\item[22.] \begin{enumerate}
+		\item[(a)] $[(1-2\theta)^2\theta(1-\theta)]/n$
+		\item[(b)] $\sum X$ is a complete sufficient statistic. $S^2=\sum(X_i-\overline{X})^2/(n-1)$ is an unbiased estimator of $\theta(1-\theta)$, since the sample variance is an unbaised estimator of the population variance; furthermore, $S^2=[\sum X_i^2-n\overline{X}^2]/(n-1) = [\sum X_i -n\overline{X}^2]/(n-1)$ is a function of $\sum X_i$; hence, by the Lehmann-Scheff\'e Theorem, $S^2$ is UMVUE of $\theta(1-\theta)$.  
+	\end{enumerate}	
+	
+	%7-24
+	\item[24.] $-\ln X_i$ has an exponential distribution, so $-\sum \ln X_i$ has a gamma distribution.
+	\begin{enumerate}
+		\item[(a)] MLE of $\theta$ is $n/-\sum \ln X_i$, $\therefore$ MLE of $\mu$ is $n/(n-\sum \ln X_i)$.
+		
+		\newpage
+		
+		\item[(b)] $-\sum \ln X_i$ is complete minimal sufficient by Theorem 9.  A minimal sufficient statistic must be a function of every other sufficient statistic. $-\sum \ln X_i$ is not a function of $\sum X_i$, hence $\sum X_i$ is not sufficient for $n>1$. $\sum X_i$ is sufficient for $n=1$. Why?
+		\item[(c)] Yes, $1/theta$.
+		\item[(d)] $-\sum \ln X_i/n$ is UMVUE of $1/\theta$; $(n-1)/-\sum \ln X_i$ is UMVUE of $\theta$. $X_1$ is an unbiased estimator of $\theta/(1+\theta)$, hence $E[X_1 \vert -\sum \ln X_i]$ is UMVUE of $\theta/(\theta + 1)$. For $n>1$, following a procedure similar to that in Example 35, the condition distribution of $X_1$ given $-\sum \ln X_i$ can be found and then conditional expectation can be obtained. Let $S = -\sum \ln X_i$, then $E[X_1\vert S=s] = \displaystyle\int_{e^{-s}}^{1} [x_1(n-1) + (s+\ln x_1)^{n-2}/x_1s^{n-1}]\ dx_1 = \dfrac{(n-1)e^{-s}}{s^{n-1}}\int_0^s u^{n-2}e^u\ du$ which can be integrated and the answer expressed as a finite sum. For $n=1$, what is the UMVUE of $\theta/(1+\theta)$?
+	\end{enumerate}
+	
+	%7-26
+	\item[26.] \begin{enumerate}
+	 	\item[(a)] $2\overline{X}-1$. Mean is $\theta$ and mean-squared error is $(\theta^2-1)/3n$.
+	 	\item[(b)] MLE is $Y_n$. The distribution of $Y_n$ os given by $P[Y_n=j] = [(j/theta)^n - ((j-1)/\theta)^n]\ I_{\{1,\ldots,\theta\}}(j)$ from which the mean and mean-squaed error can be found.
+	 	\item[(c)] $Y_n$ is sufficient by the factorization criterion. To show that $E_\theta[\chi(Y_n)] = 0$ for $\theta = 1, 2, 3, \ldots$ implies that $\chi(j)=0$ for $j=1,2,\ldots$. It suffices to substitute in $\theta = 1, 2, 3$, etc. successively.
+	 	\item[(d)] By the Lehmann-Scheff\'e Theorem and part (c) it suffices to show that the given statistic is unbiased.
+	 \end{enumerate}
+ 
+ 	%7-27
+ 	\item[27.] $X$ is sufficient but not complete.
+
+	%7-28
+	\item[28.] $\tau(\theta) = \mbox{median} = \ln 2/\theta$. We already know that the MLE and UMVUE of $1/\theta$; to find the MLE amd UMVUE of $\tau(\theta)$ requires a simple scale adjustment.	  
+	
+	%7-29  
+	\item[29.] \begin{enumerate}
+		\item[(b)] $X^2 - 1$.
+		\item[(c)] $I_{(0,\infty)}(X_1)$.
+		
+		\newpage
+		
+		\item[(d)] $\Phi(\overline{X})$.
+		\item[(e)] $\overline{X}^2 - (1/n)$.
+		\item[(f)] $X_1\vert\overline{X} \sim N(\overline{X},(n-1)/n)$ and $E[I_{(0,\infty)}(X_1)\vert \overline{X}] = \Phi\left(\sqrt{\dfrac{n}{n-1}}(\overline{X})\right)$ is UMVUE for $P[X>0]$.
+	\end{enumerate} 
+	
+	%7-30  
+	\item[30.] $I_{\{0,1\}}(X_1)$ is an unbiased estimator of $(1+\lambda)e^{-\lambda}$.  See Example34 for a procedure that will find an UMVUE of $(1+\lambda)e^{-\lambda}$.
+	
+	%7-31
+	\item[31.] This is a ``triangular" density rather than a ``rectangular" density as in Problem 21.  The results are quite similar.  
+	
+	%7-32  
+	\item[32.] The density given in this problem is a form of the Pareto density.  This problem is like Problem 24.  In that problem $-\ln X_i$ has an exponential distribution; in this problem $\ln(1+X_i)$ has an exponential distribution.
+	\begin{enumerate}
+		\item[(a)] $(1+\overline{X})/\overline{X}$.
+		\item[(b)] MLE of $1/\theta$ is $\sum \ln(1+X_i)/n$.
+		\item[(c)] $\sum \ln(1+X_i)/n$.
+		\item[(d)] $1/n\theta^2$
+		\item[(e)] $\sum \ln(1+X_i)/n$.
+		\item[(f)] $(n-1)/\sum \ln(1+X_i)$.
+	\end{enumerate}
+	
+	%7-33
+	\item[33.] \begin{enumerate}
+		\item[(a)] $\max[-Y_1,Y_n]$, or, the absolute value of the observation farthest from zero.
+		\item[(b)] $X$ is not minimal sufficient since $\vert X\vert$ is sufficient. $X$ is not complete.
+	\end{enumerate}  
+	
+	%7-34  
+	\item[34.] \begin{enumerate}
+		\item[(a)] $\sum X_i$ is a complete sufficient statistic and the sample variance is an unbiased estimator so an UMVUE exists.
+		\end{enumerate}	  
+	
+	%7-35  
+	\item[35.] \begin{enumerate}
+		\item[(a)] $\sum X_i$
+		\item[(b)] Find it by using the form given in Equation (16).
+	\end{enumerate}
+	
+	%7-37  
+	\item[37.] $e^{-X_i}$ has an exponential distribution with parameter $e^\theta$.  See Problem 24 and 32 for similar problems.  
+	\begin{enumerate}
+		\item[(f)] The given statistic is a function of the complete suffifient statistics $\sum e^{-\lambda_i}$ which has a gamma distribution.  Verify that the given statistic is unbiased. 
+	\end{enumerate}
+	 
+	\newpage
+	%7-39  
+	\item[39.] This is a generalization of Problems 21 and 31.
+	\begin{enumerate}
+		\item[(a)] $a(\theta) = \displaystyle [\int_0^\theta b(x)\ dx]^{-1}$ so $a(\theta)$ is non-increasing.  The likelihood function is proportional to $a^n(\theta)$ for $\theta > Y_n$. MLE of $\theta$ is $Y_n$.
+		\item[(b)] $Y_n$. See Example 33 for the idea of the completeness proof.
+	\end{enumerate}
+	
+	%7-40  
+	\item[40.] $\theta$ is the mean and variance.
+	\begin{enumerate}
+		\item[(a)] $\sum X_i^2$.
+		\item[(b)] It is not a function of a complete sufficient statistic.
+		\item[(c)] No.
+	\end{enumerate}
+	
+	%7-41
+	\item[41.] $\theta$ should have been assumed positive. Then $\theta$ is the mean and standard deviation, and is a scale parameter.
+	
+	%7-42  
+	\item[42.] \begin{enumerate}
+		\item[(a)] $Y_n/2$.
+		\item[(b)] No, $E[\dfrac{n+1}{2n+1}\!Y_n - \dfrac{n+1}{n+2}\!Y_1] = 0$.
+		\item[(c)] $\dfrac{(n+2)[Y^{-n-1}_1 - (Y_n/2)^{-n-1}]}{(n+1)[Y^{-n-2}_1 - (Y_n/2)^{-n-2}]}$.
+		\item[(d)] $(Y_1+Y_n)/3$.
+	\end{enumerate}
+	
+	%7-43  
+	\item[43.] \begin{enumerate}
+		\item[(a)] $\sum X_i^2$ is complete and sufficient. $\sum X_i^2/n$ is UMVUE of $\theta^2$.
+		\item[(b)] $c^* = 1/(n+1)$ minimizes MSE in family of estimators of form $c\sum X_i^2$.
+		\item[(c)] $\Gamma(n/2)\sqrt{\sum X_i^2}/[\sqrt{2}\Gamma((n+1)/2)]$.
+		\item[(e)] Yes, since both are scale invariant.
+	\end{enumerate}	 
+	
+	%7-44  
+	\item[44.] \begin{enumerate}
+		\item[(a)] $Y_1$
+		\item[(b)] $Y_1$
+		\item[(c)] $\overline{X}-1$
+		\item[(d)] $Y_1$
+		\item[(e)] $Y_1 - (1/n)$
+		\item[(f)] $Y_1 - (1/n)$
+		\item[(g)] $\dfrac{e^{(n-1)Y_1}[Y_1-1/(n-1)] + 1/(n-1)}{e^{(n-1)Y_1} - 1}$
+	\end{enumerate}
+
+	\newpage
+	%7-45
+	\item[45.] The $\theta$ in the indicator function should be $\theta$.
+	\begin{enumerate}
+		\item[(a)] Posterior distribution of $\theta \propto$ \\
+		$ \theta^n\ \exp[(\theta-1)\ \log\sum x_i]\theta^{r-1}e^{-\lambda\theta}$, hence it is $\mbox{gamma}(n+r, \lambda-\sum \log x_i)$.
+		\item[(b)] Mean posterior is $(n+r)/(\lambda - \sum\log X_i)$. 
+	\end{enumerate}
+  
+  	%7-46
+  	\item[46.] Similar to Example 45.
+  	
+  	%7-47
+  	\item[47.] (f) Similar, but slightly more tedious, to Example 46. 
+  	
+  	%7-50
+  	\item[50.] See the last paragraph in Section 7.2.	
+  	
+  	%7-51
+    \item[51.] This problem is similar to several others and makes a good review question.  Recall that the sim of geometric distributed r.v.'s have negative binomial distribution. See Problem 21 in Chpater V.
+    \begin{enumerate}
+    	\item[(g)] $\theta=P[X=0]$, so $I_{\{0\}}(X_1)$ is an unbiased estimator, and $E[I_{\{0\}}(X_1)\vert \sum X_i]$ is UMVUE.
+    	\item[(h)] posterior distribution $\propto \theta^n(1-\theta)^{\sum x_i}I_{(0,1)}(\theta)$, hence the posterior is $\mbox{beta}(n+1, \sum x_i +1)$.
+    \end{enumerate}	
+  	
+  	%7-53
+    \item[53.] The middle $\beta$ should be $1/\beta$. The factorization criterion shows that $Y_1$ and $\sum X_i$ are jointly sufficient.  $Y_1$ and $\sum (X_i-Y_1)$ are sufficient and complete. Now $E[Y_1] = \alpha + (\beta/n)$ and $E[\sum(X_i-Y_1)] = (n-1)\beta$, so $\sum(X_i-Y_1)/(n-1)$ is UMVUE of $\beta$ and $Y_1 - [\sum(X_i-Y_1)/n(n-1)]$ is UMVUE of $\alpha$.
+	
+	%7-54
+  	\item[54.] \begin{enumerate}
+  		\item[(a)] Factorization criterion gives $(\sum X_i, Y_1)$.
+  		\item[(b)] $L(\theta, \alpha; x_1,\ldots,x_n) = (1-\theta)^n\theta^{\sum x_i}\theta^{-n\alpha}$ for $0\le \theta\le 1$ and $\alpha = y_1$ \\
+  		$y_1-1, y_1-2,\ldots$. It is monotone increasing in $\alpha$ for each $\theta$, hence MLE of $\alpha$ is $Y_1$ and MLE of $\theta$ is $(\overline{X}-Y_1)/(\overline{X}-Y_1+1)$.
+  	\end{enumerate}	
+
+	%7-55
+  	\item[55.] Picture the likelihood function. Between any two consecutive order statistics, the likelihood function is ``cusp" shaped. It can be concluded that the maximum of the likelihood function occurs at an order statistic, pick that order statistic that maximizes $L(y_j)$ for $j=1,\dots,n$.	
+\end{enumerate}
