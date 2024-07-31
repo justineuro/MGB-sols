@@ -20,7 +20,7 @@ As this version of the manual has not been thoroughly proofread, it would be gre
 ## Creating a PDF copy
 To create your own PDF copy, open the file `main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  Alternatively, at the commandline and under your local copy of `MGB-main` folder:
 ```bash
-pdflatex main.tex
+pdflatex mgb-main.tex
 ```
 
 ## License
