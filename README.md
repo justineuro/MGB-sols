@@ -1,8 +1,8 @@
-# MGB-sols-part
+# MGB-sols
 
 ## [*&hellip; Under construction &hellip;*]  
   
-This repository contains a partial solutions manual to _Introduction to the Theory of Statistics_ (1974)
+This repository ([MGB-sols](https://github.com/justineuro/MGB-sols)) contains a partial solutions manual to _Introduction to the Theory of Statistics_ (1974)
 by A.M. Mood, F.A. Graybill, and D.C. Boes. The solutions manual that is given here (PDF and LaTeX codes) is a re-make  of a previous manual that may be found at the following sites (there may others):
 
 * [pdfcoffee.com](https://pdfcoffee.com/introduction-to-the-theory-of-statistics-solutions-manual-1974-mood-graybill-pdf-free.html)
@@ -16,3 +16,28 @@ The textbook itself may be downloaded from any of the following sites (among oth
 * [Internetarchive (site 2)](https://archive.org/details/in.ernet.dli.2015.137786)
 
 As this version of the manual has not been thoroughly proofread, it would be greatly appreciated if you can inform yours truly, through the `Issues` section of this repository or by email: [(justineuro@gmail.com)](mailto:justineuro@gmail.com), of any typographical errors that you spot (you may also send a `git pull` request for purposes related to this). Looking forward to collaborating with you, many thanks!
+
+## Creating a PDF copy
+To create your own PDF copy, open the file `main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  Alternatively, at the commandline and under your local copy of `MGB-main` folder:
+```bash
+pdflatex main.tex
+```
+
+## License
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="https://github.com/justineuro">
+    <span property="dct:title">Justine Leon A. Uro</span></a>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title"><a href="https://github.com/justineuro/MGB-sols">MGB-sols</a></span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="PH" about="https://github.com/justineuro/MGB-sols">
+  Philippines</span>.
+</p>
