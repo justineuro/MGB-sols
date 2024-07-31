@@ -2,7 +2,7 @@
 
 ## [*&hellip; Under construction &hellip;*]  
   
-This repository ([MGB-sols](https://github.com/justineuro/MGB-sols)) contains a partial solutions manual to _Introduction to the Theory of Statistics_ (1974)
+This repository ([MGB-sols](https://github.com/justineuro/MGB-sols)) contains a partial solutions manual to *_Introduction to the Theory of Statistics_* (1974)
 by A.M. Mood, F.A. Graybill, and D.C. Boes. The solutions manual that is given here (PDF and LaTeX codes) is a re-make  of a previous manual that may be found at the following sites (there may others):
 
 * [pdfcoffee.com](https://pdfcoffee.com/introduction-to-the-theory-of-statistics-solutions-manual-1974-mood-graybill-pdf-free.html)
