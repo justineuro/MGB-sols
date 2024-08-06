@@ -5,7 +5,7 @@
 	%2-1
 	\item[1.] \begin{enumerate}
 		
-		\item $f_1(\cdot)$ and $f_2(\cdot)$ are esily shown to be p.d.f.  Also, the integral of $f(x)$ is clearly unity.  One can show that $f(x) \ge 0$.
+		\item $f_1(\cdot)$ and $f_2(\cdot)$ are esily shown to be p.d.f.s.  Also, the integral of $f(x)$ is clearly unity.  One can show that $f(x) \ge 0$.
 		
 		\item You can disprove this by taking $\theta_1 = -1, \theta_2 = 2$, $f_1(x) = I_{(0,1)}(x)$ and $f_2(x) = I_{(1,2)}(x)$.
 		
@@ -17,10 +17,9 @@
 	%2-3
 	\item[3.] Need $\dsp K \int_{-K}^{K} x^2\ dx = 1$, which gives $K=$ fourth root of 3/2.
 	
-	%2-4
 	\item[4.] \begin{enumerate}
 	
-		\item Since $F_X(x)$ can be written as a function of $(x- \alpha)/\beta)$, let's do it.  That is, write $F_X(x) = F\left(\dfrac{x-\alpha}{\beta}\right)$.
+		\item Since $F_X(x)$ can be written as a function of $(x- \alpha)/\beta$, let's do it.  That is, write $F_X(x) = F\left(\dfrac{x-\alpha}{\beta}\right)$.
 		\begin{eqnarray*}
 		\text{Now}\ E[X] &=& \int_{0}^{\infty} \left[ 1 - F\left(\dfrac{x- \alpha}{\beta}\right) \right]\ dx- \int_{-\infty}^{0} F\left(\dfrac{x- \alpha}{\beta}\right)\ dx \\
 		&=& \beta \int_{-\alpha/\beta}^{\infty}(1- F(y))\ dy- \beta \int_{-\infty}^{-\alpha/\beta} F(y)\ dy \\
@@ -30,8 +29,7 @@
 		$E[X]$ equals $\alpha$ plus a quantity that does not depend on $\alpha$; hence if $\alpha$ is increased by $\Delta\alpha$ so is $E[X]$.
 		
 		\end{enumerate} 
-	
-	%2-5	
+		
 	\item[5.] \begin{enumerate}
 		
 		\item[(b)] $X$ is a discrete random variable taking on values $0, 1, 2$, and $P[X=2]=(1/4)^2$, $P[X=1]= 2(1/4)(3/4)$, and $P[X=0]=(3/4)^2$. 
@@ -39,8 +37,7 @@
 		\item[(c)] $E[X]=1/2$ and $\text{var}[X]=3/8$.
 		
 		\end{enumerate}
-	
-	%2-7
+		
 	\item[7.] \begin{enumerate}
 		\item[(a)] The game ends at the first trial if and only if A wins first match; the game ends at the second trial if and only if B wins the first two matches; the game ends at the third trial if and only if B wins the first match and A wins the next two; etc. \\
 		$P[X=j] = (1/2)^j,\ j = 1,2, \ldots.$
@@ -54,14 +51,12 @@
 		
 		\end{enumerate}
 		Problems 8 and 9 are very similar.  The density of 8 is "triangular" whereas that of 9 is "parabolic."  Both densities are symmetric about $\alpha$.
-	
-	%2-8	
+		
 	\item[8.] \begin{enumerate}
 		\item[(c)] $E[X] = \alpha$ and $\text{var}[X]=\beta^2/6$.
 		\item[(b)] For $\alpha < q < 1/2, \xi_q  = \alpha - \beta + \beta\sqrt{2q}$
 	\end{enumerate}
 
-	%2-11
 	\item[11.] Write $\mu_\theta$ and $\sigma^2_\theta$ for the mean and variance of $f(\cdot;\theta)$ including $\theta =0$ and $\theta=1$. \begin{enumerate}
 	\item[(b)] $\mu_\theta = \theta\mu_1 + (1-\theta)\mu_0$ \\
 	$\sigma^2_\theta = \theta\sigma^2_1 + (1-\theta)\sigma^2_0 + \theta(1-\theta)(\mu_1-\mu_0)^2$
@@ -69,18 +64,23 @@
 	\item[(c)] $\theta m_1(t) + (1-\theta)m_0(t)$.
 	
 	\end{enumerate}
-	
-	%2-13
+
+	\item[12.] \begin{enumerate}
+		\item[(a)] 16/25
+		\item[(b)] Model the problem by assuming that the bombs fall independently of one another.  Then if at least one of the three large bombs falls within 40 feet of the track, traffic will be disrupted. Answer is $1 - (9/25)^3$.   
+	\end{enumerate}
+
 	\item[13.] \begin{enumerate}
 		\item[(a)] $E[(X-b)^2] = E[(X-\mu)^2] + (\mu-b)^2$ which is minimized when $b = \mu$.
 		\item[(b)] The result follows from the hint by nothing that the  integral on the right hand side of the equality is non-negative for all b and zero for b = m.
 	\end{enumerate}
-	To prove the hint assume $m < b$ ($m>b$ is similar).  Write $E[\vert X-b\vert] - E[\vert X-m\vert]$ = $\dsp \int_{-\infty}^b(b-x)f(x)\ dx + \int_a^b (x-b)f(x)\ dx + \int_m^\infty (x-b)f(x)\ dx$ - \\
-	$\dsp \left( \int_{-\infty}^b(m-x)f(x)\ dx + \int_b^m (m-x)f(x)\ dx + \int_m^\infty (x-m)f(x)\ dx\right)$ \\
-	= $2\int_b^m (x-b)f(x)\ dx + (b-m)[F(b) + F(m) - F(b) -1 + F(m)]$ \\
-	= $2\int_b^m (x-b)f(x)\  dx$
 
-	%2-14
+	\newpage
+	To prove the hint assume $m < b$ ($m>b$ is similar).  Write $E[\vert X-b\vert] - E[\vert X-m\vert]$ = $\dsp \int_{-\infty}^b(b-x)f(x)\ dx + \int_b^m (x-b)f(x)\ dx + \int_m^\infty (x-b)f(x)\ dx$ - \\
+	$\dsp \left( \int_{-\infty}^b(m-x)f(x)\ dx + \int_b^m (m-x)f(x)\ dx + \int_m^\infty (x-m)f(x)\ dx\right)$ \\
+	= $2\dsp \int_b^m (x-b)f(x)\ dx + (b-m)[F(b) + F(m) - F(b) -1 + F(m)]$ \\
+	= $2\dsp \int_b^m (x-b)f(x)\  dx$
+
 	\item[14.] \begin{enumerate}
 		\item[(a)] 21/25
 		\item[(b)] $\mu_X = 0$ and $\sigma_X = 1/2$,  hence \\
@@ -88,16 +88,13 @@
 		\item[(c)] See problem 20.
 	\end{enumerate}
 
-	%2-15
+
 	\item[15.] $E[X]=1$ and $\text{var}[X]= 1/2$.
 	
-	%2-17
 	\item[17.] No, by Chebyshev inequality.
 	
-	%2-20
-	\item[20.] $P[X\le \mu t] \ge P[X < \mu t]$ = $1-P[(X/\mu) \ge t] \ge 1 - E[(X/\mu)]/t$ = $ 1- )1/t)$ by Chebyshev inequality. 
+	\item[20.] $P[X\le \mu t] \ge P[X < \mu t]$ = $1-P[(X/\mu) \ge t] \ge 1 - E[(X/\mu)]/t$ = $ 1- (1/t)$ by Chebyshev inequality. 
 	
-	%2-24
 	\item[24.] \begin{enumerate}
 		\item[(a)] $f_X(x;\theta) \ge 0$ for $-1/2 \le \theta \le 1/2$. 
 		\item[(b)] $E[X] = (2/3)\theta$; median = $ \dfrac{-1+(1+4\theta^2)^{1/2}}{2\theta}$ for $\theta \ne 0$.
