@@ -1,63 +1,54 @@
 %mgb-ch06
 %Chapter VI - MGB Solutions
 \begin{enumerate}
-	%6-3
 	\item[3.] \begin{enumerate}
 		\item[(a)] $P[\left\vert X_2-X_1\right\vert <1/2] = \displaystyle\int_0^1 P[\left\vert X_2-x_1\right\vert<1/2]\ dx_1 = 3/4$. 
 		\item[(b)] $P[1/4 < (X_1+X_2)/2 <3/4] = P[1/2 < X_1+X_2 < 3/2] = 3/4$.
 	\end{enumerate}
 
-	%6-4
 	\item[4.]  \begin{enumerate}
 		\item[(a)] $f_{X_1,\ldots,X_9}(x_1,\ldots,x_9) = \sum\limits_{i=1}^{9}[(2/3)^{x_i}(1/3)^{1-x_i}I_{\{0,1\}}(x_i)]$ \\
 		$f_{\sum X_j}(s) = \displaystyle {9\choose 5}(2/3)^s(1/3)^{9-s}I_{\{0,1,\ldots,9\}}(s)$
 		\item[(b)] $E[\overline{X}_9]=2/3,\ E[S^2]=2/9$.
 	\end{enumerate}
 
-	%6-5
 	\item[5.]  \begin{enumerate}
 		\item[(a)] Yes; it follows from simple algebra.
 		\item[(b)] There are various ways to proceed.  For example, \\
 		$\mbox{var}[S^2]=[1/2n(n-1)]^2\ \mbox{var}[\sum\sum(X_i-X_j)^2]$ \\
-		$=\ [1/2n(n-1)]^2\ \sum\sum\sum\sum\ \mbox{cov}[(X_i-X_j)^2, (X_\alpha,X_\beta)^2]$ \\
+		$=\ [1/2n(n-1)]^2\ \sum\sum\sum\sum\ \mbox{cov}[(X_i-X_j)^2, (X_\alpha-X_\beta)^2]$ \\
 		$\phantom{=\ }$ (using ``variance of a sum is the double sum of the covariances") \\
 		$=\ [1/2n(n-1)]^2(2n(n-1)\mbox{var}[(X_2-X_1)^2] + 4n(n-1)(n-2)\mbox{cov}[(X_1-X_2)^2,(X_1-X_3)^2])$ \\
-		$=\ [1/2n(n-1)]^2(2n(n-1)(2\mu_4+2\sigma^4) + 4n(n-1)(n-2)(\mu_4-\sigma_4)$ \\
-		$=\ (\mu_4 - \dfrac{n-3}{n-1}\sigma^4)$.
+		$=\ [1/2n(n-1)]^2(2n(n-1)(2\mu_4+2\sigma^4) + 4n(n-1)(n-2)(\mu_4-\sigma_4))$ \\
+		$=\ (1/n)(\mu_4 - \dfrac{n-3}{n-1}\sigma^4)$.
 		\item[(c)] $\mbox{cov}[\overline{X},S^2] = \mbox{cov}[\overline{X}-\mu, S^2] = [1/n(n-1)]\mbox{cov}[\sum(X_k-\mu), \sum(X_i-\mu)^2-(1/n)\sum\sum(X_i-\mu)(X_j-\mu)]$ \\
 		$=\ [1/n(n-1)](\sum\sum\mbox{cov}[\sum(X_k-\mu),(X_i-\mu)^2] - (1/n)\sum\sum\sum\mbox{cov}[(X_k-\mu),(X_i-\mu)(X_j-\mu)])$ \\
 		$=\ [1/n(n-1)](n\mu_3 - (1/n)(n\mu_3)) = \mu_3/n$, a rather simple answer.
 		\end{enumerate}
 
-	%6-6
 	\item[6.]  \begin{enumerate}
 		\item[(a)] $M_r = (1/2)\left[\left(\dfrac{X_1-X_2}{2}\right)^r + (-1)^r\left(\dfrac{X_1-X_2}{2}\right)\right]^r$. \\
 		For $r$ odd, $M_r \equiv 0$ and hence $E[M_r]=0$ and $\mbox{var}[M_r]=0$. For $r$ even, $M_r = \left(\dfrac{X_1-X_2}{2}\right)^r$, and $E[M_r] = (1/2^r)\sum\limits_{j=0}^r{r\choose j}\mu'_j\mu'_{r-j}(-1)^{r-j}$ and similarly for $\mbox{var}[M_r]$.
 		\item[(b)] $E[(1/n)\sum(X_i-\mu)^r] = (1/n)\sum E[(X_i-\mu)^r] = \mu_r$.
 	\end{enumerate}
 
-	%6-7
 	\item[7.]  \begin{enumerate}
 		\item[(a)] Have $P[-\epsilon < \overline{X}_n - \mu < \epsilon] \ge 1 - \sigma$ for $n > \sigma^2/\epsilon^24.$ \\
 		Have $\mu = .5, \sigma^2=1/4, \epsilon=.1, \delta=.1$, hence $n=250$.
-		\item[(b)] Use the Central limit theorem. \\
+		\item[(b)] Use the Central Limit Theorem. \\
 		$.90 = P[.4 < \overline{X}<.6] \approx \Phi\left(\dfrac{.6-.5}{\sqrt{1/4n}}\right) - \Phi\left(\dfrac{.4-.5}{\sqrt{1/4n}}\right)$ and so $n \approx 58$. 
 	\end{enumerate}
 
 	\newpage
-	%6-9
+	
 	\item[9.] $Y=\overline{X}_1-\overline{X}_2$ is approximately distributed as a normal distribution with mean = 0 and variance $2\sigma^2/n$. Want $P[\vert\overline{X}_1-\overline{X}_2\vert>\sigma] = .01.\ n = 14$.
 	
-	%6-10
 	\item[10.] Want $.01 = P[\overline{X}<2200] \approx \Phi\left(\dfrac{2200-2250}{250\sqrt{n}}\right)\!.\ n =136$.
 	
-	%6-11
 	\item[11.] Want $.95 = P[\vert\overline{X}-\mu\vert\le .25\sigma].\ n =62$.
 		
-	%6-12
 	\item[12.] Want $.01 = P[\overline{X}<1/2]\approx \Phi\left(\dfrac{.5-.52}{\sqrt{.52(.48)/n}}\right)\!.\ n = 3375$.
 	
-	%6-15
 	\item[15.]  \begin{enumerate}
 		\item[(a)] There are ten equally likely (unordered) samples; compute $\overline{x}$ for each and the evaluate $E[\overline{X}]$ and $\mbox{var}[\overline{X}].$ 3 and .75
 		\item[(b)] 1
@@ -69,38 +60,36 @@
 			$=\ \dfrac{\sigma^2}{n}\ \dfrac{N-n}{N-1}$.
 	\end{enumerate}
 
-	%6-17
-	\item[17.] $Z=\sum(X_i-\overline{X})^2/\sigma^2$ is chi-square distributed with $n-$ degrees of freedom. \\
+	\item[17.] $Z=\sum(X_i-\overline{X})^2/\sigma^2$ is chi-square distributed with $n-1$ degrees of freedom. \\
 	$S = \sqrt{\sigma^2Z/(n-1)}.\ E[S] = \sqrt{\sigma^2/(n-1)}E[\sqrt{Z}]$ \\
-	$=\ \sqrt{\sigma^2/(n-1)}\displaystyle\int_0^\infty \dfrac{1}{\Gamma((n-1)/2)(1/2)^{(n-1)/2}}z^{(n/2)-1}e^{-(1/2)z}\ dz$ \\
-	$=\ [(\sigma\sqrt{2})/sqrt{n-1}]\Gamma(n/2)/\Gamma((n-1)/2)$. \\
+	$=\ \sqrt{\sigma^2/(n-1)}\displaystyle\int_0^\infty \dfrac{1}{\Gamma((n-1)/2)}(1/2)^{(n-1)/2}z^{(n/2)-1}e^{-(1/2)z}\ dz$ \\
+	$=\ [(\sigma\sqrt{2})/\sqrt{n-1}]\Gamma(n/2)/\Gamma((n-1)/2)$. \\
 	$\mbox{var}[S]=E[S^2]-E^2[S]$ \\
-	$=\ \dfrac{\sigma_2}{n-1}E[Z] - E^2[S] = \sigma_2\left\{1-\dfrac{2}{n-1}\left[\dfrac{\Gamma(n/2)}{\Gamma((n-1)/2)}\right]\right\}$
+	$=\ \dfrac{\sigma_2}{n-1}E[Z] - E^2[S] = \sigma^2\left\{1-\dfrac{2}{n-1}\left[\dfrac{\Gamma(n/2)}{\Gamma((n-1)/2)}\right]\right\}$
 
-	%6-18
 	\item[18.]  \begin{enumerate}
 		\item[(b)] $X = (U/m)/(V/n)$ implies $1/X = (V/n)/(U/m)$.
-		\item[(c)] $W = \dfrac{\dfrac{m}{n}\dfrac{U/m}{V/n}}{1\dfrac{m}{n}\dfrac{U/m}{V/n}} = \dfrac{U}{V+U}$ is beta distributed with parameters $m/2$ and $n/2$ by Example 25 of Chapter V.
+		\item[(c)] $W = \dfrac{\dfrac{m}{n}\dfrac{U/m}{V/n}}{1+\dfrac{m}{n}\dfrac{U/m}{V/n}} = \dfrac{U}{V+U}$ is beta distributed with parameters $m/2$ and $n/2$ by Example 25 of Chapter V.
 		\item[(d)] $E[X] = \dfrac{n}{m}E[\dfrac{W}{1-W}] = \dfrac{n}{m}\dfrac{1}{B(m/2,n/2)}\displaystyle \int_0^1 w^{m/2}(1-w)^{(n/2)-2}\ dw = n/(n-2)$. \\
 		Similarly for $E[X^2]$ and $\mbox{var}[X]$.
 	\end{enumerate}
 
 	\newpage
-	%6-19
+
 	\item[19.]  \begin{enumerate}
 		\item[(a)] The integral that defines the mean exists for degrees of freedom greater than 1; symmetry shows that the mean is zero. The integral that defines the variance exists for degrees of freedom greater than 2; \\
 		$\mbox{var}[T] = E[T^2] = E[\dfrac{(\mbox{standard normal r.v.})^2}{\mbox{chi-square r.v./d.\ of f.}}]$ \\
 		$=\ E[\mbox{F-dist'd r.v.\ with 1 and }k\ \mbox{d.\ of f.}] = k/(k-2)$ for $k>2$.	\\
-		If it seems unfair to use results on the F distribution to obtain results on the t distribution, $E[T^2]$ can be found directly. For example, the standard normal r.v. of the numerator is independent of the chi-square r.v. in the denominator so the expectation can be factors into the product of the expectation of the square of a standard normal r.v. and the expectation of the reciprocal of a chi-square r.v. divide by degrees of freedom; both factors are known.
+		If it seems unfair to use results on the F distribution to obtain results on the t distribution, $E[T^2]$ can be found directly. For example, the standard normal r.v. of the numerator is independent of the chi-square r.v. in the denominator so the expectation can be factored into the product of the expectation of the square of a standard normal r.v. and the expectation of the reciprocal of a chi-square r.v. divide by degrees of freedom; both factors are known.
 		\item[(b)] Show $C(k)[1/(1+t^2/k)^{(k+1)/2})] \underset {\tiny {k\! \to\! \infty}}{ \longrightarrow} c\ e^{-{\small 1/2}t^2}$.
 		Assuming that the constant part $C(k)$ does what is has to do, it is easy to show 
 		\[(1 + t^2/k)^{(k+1)/2} \longrightarrow e^{-{\small 1/2}t^2}. \]
-		\item[(c)] $X =Z/\sqrt{U/k}$ implies $X^2=Z^2/(U/k)$ which is a ratio of two independent chi-squared distributed r.v.'s divided by their respective degrees of freedom, hence $X^2$ is F-distributed with one and $k$ degrees of freedom.
-		\item[(d)] According to part (c), $X^2\sim F(1,k)$; according to part (b) of Problem 18, $1/X^2\sim F(k,1)$; and according to part (c) of Problem 18, $\dfrac{1}{1+(X^2/k)} = \dfrac{k(1/X^2)}{1+k(1/X^2)}$ is beta distributed with parameters $k/2$ and $1/2$.
+		\item[(c)] $\chi = Z/\sqrt{U/k}$ implies $\chi^2=Z^2/(U/k)$ which is a ratio of two independent chi-squared distributed r.v.'s divided by their respective degrees of freedom, hence $X^2$ is F-distributed with one and $k$ degrees of freedom.
+		\item[(d)] According to part (c), $\chi^2\sim F(1,k)$; according to part (b) of Problem 18, $1/\chi^2\sim F(k,1)$; and according to part (c) of Problem 18, $\dfrac{1}{1+(\chi^2/k)} = \dfrac{k(1/\chi^2)}{1+k(1/\chi^2)}$ is beta distributed with parameters $k/2$ and $1/2$.
 	\end{enumerate}
 
-Problems 20 through 24 inclusive are much alike and are intended to give some practice in utilizing the results of Sec. 4.
-	%6-22
+Problems 20 through 24 inclusive are much alike and are intended to give some practice in utilizing the results of Sec.\ 4.
+
 	\item[22.] \begin{enumerate}
 		\item[(a)] Chi-square with $n-2$ degree of freedom. (The sum of independent chi-square distributed r.v.'s is chi-square distributed with degrres of freedom equal to the sum of the individual degrees of freedom.)	
 		\item[(b)] Normal with mean $\mu$ and variance $n\sigma^2/4k(n-k)$.
@@ -110,7 +99,7 @@ Problems 20 through 24 inclusive are much alike and are intended to give some pr
 	\end{enumerate}
 
 	\newpage
-	%6-23
+
 	\item[23.] Don't forget that $Z_1+Z_2$ and $Z_2-Z_1$ are independent.  Similarly for $X_1+X_2$ and $X_2-X_1$.
 	\begin{enumerate}
 		\item[(b)] t-distribution with 2 degrees of freedom.
@@ -118,30 +107,23 @@ Problems 20 through 24 inclusive are much alike and are intended to give some pr
 		\item[(d)] F distribution with 1 and 1 degrees of freedom.
 	\end{enumerate}
 
-	%6-25
 	\item[25.] Note that $X_1$ and $X_2$ are independent identically distributed chi-square random variables with 2 degrees of freedom, so $X_1/X_2$ has an F distribution with 2 and 2 degrees of freedom.
 
-	%6-27
 	\item[27.] $U\sim N(\mu, 1/\sum(1/\sigma_j^2))$ \\
 	$V = \sum(X_i-U)^2/\sigma_i^2 = \sum(X_i-\mu)^2/\sigma_i^2 - (U-\mu)\sigma(1/\sigma_j^2)$ which is a difference of two independent chi-square distributed r.v.
 	s., the first with $n$ degrees of freedom, the second with 1 degree of freedom.  The result follows using the moment generation function technique.  What result does this reduce to if all $\sigma_j^2$ are equal?
 
-	%6-29
 	\item[29.] The joint distribution of $(\overline{X}, S_1^2, S_2^2)$ is easily obtained since they are independent. Make a transformation and integrate out the unwanted variable.
 
-	%6-30
 	\item[30.] One could use Theorem 13. On the other hand, note that $Y_2 - Y_1 = \vert X_1 - X_2\vert$ and the distribution of $X_1 - X_2$ is known and it is easy to find the distribution of the absolute value of a random variable.
 
-	%6-31
 	\item[31.] \begin{enumerate}
 		\item[(a)] $1 - P[\mbox{both less than median}] = 3/4$.
-		\item[(b)] $1 - P[\mbox{all are less than median}] = 1 (1/2)^n$. 
+		\item[(b)] $1 - P[\mbox{all are less than median}] = 1 - (1/2)^n$. 
 	\end{enumerate}
-	
-	%6-32
+
 	\item[32.] $E[F(Y_1)]$ is wanted. $F(Y_1)$ has the same distribution as the smallest observation of a random sample of size $n$ from a uniform distribution over the interval $(0,1)$.
 
-	%6-33
 	\item[33.] $E[Y_1] = \mu - [(n-1)/(n+1)]\sqrt{3}\, \sigma$ \\
 	$E[Y_n] = \mu + [(n-1)/(n+1)]\sqrt{3}\, \sigma$ \\
 	$\mbox{var}[Y_1] = \mbox{var}[Y_n] = 12\sigma^2\, n/[(n+1)^2(n+1)]$. \\
@@ -151,22 +133,19 @@ Problems 20 through 24 inclusive are much alike and are intended to give some pr
 	
 	\begin{enumerate}
 		\item[(a)] $E[Y_n - Y_1] = [(n-1)/(n+1)]2\sqrt{3}\, \sigma$. \\
-			$\mbox{var}[Y_n-Y_1] = 24\sigma^2(n-1)/[(n+1)^2(n+1)]$. 
+			$\mbox{var}[Y_n-Y_1] = 24\sigma^2(n-1)/[(n+1)^2(n+2)]$. 
 		\item[(b)] $E[(Y_1+Y_n)/2] = \mu.$ \\
-			$\mbox{var}[(Y_1+Y_n)/2] = 6\sigma^2/[(n+1)^2(n+1)]$.
+			$\mbox{var}[(Y_1+Y_n)/2] = 6\sigma^2/[(n+1)(n+2)]$.
 		\item[(c)] $E[Y_{k+1}] = \mu$. \\
 			$\mbox{var}[Y_{k+1}] = 3\sigma^2/(2k+3)$. 
 		\item[(d)] $\dfrac{3\sigma^2}{n+2} > \dfrac{\sigma^2}{n} > \dfrac{6\sigma^2}{(n+1)(n+2)}$ for $n > 2$.
 	\end{enumerate}
 	
-	%6-34
 	\item[34.] $\overline{X}$ is asymptotically normally distributed with mean $\alpha$ and variance $2\beta^2/n$. The sample median is asymptotically normally distributed with mean $\alpha$ and variance $\beta^2/n$ by Theorem 14. Note that the sample median has the smaller asymptotic variance. 
 
-	%6-35
-	\item[35.] $P[(Y_n-a_n) \le y] = P[Y_n \le b_ny + a_n] = (1 - \exp[(b_ny-a_n)/(1-b_ny-a_n)])^n$ \\
+	\item[35.] $P[(Y_n-a_n)/b_n \le y] = P[Y_n \le b_ny + a_n] = (1 - \exp[(b_ny-a_n)/(1-b_ny-a_n)])^n$ \\
 	$=\ (1 - \exp[\dfrac{y+(\log n)^2}{y-\log n}])^n$. Now let $n\ \to \infty$ and $\exp(-e^{-y})$ results.
 
-	%6-36
 	\item[36.] \begin{enumerate}
 		\item[(a)] Similar to Problem 34.
 		\item[(b)] With $\theta$ replacing $\lambda$ choose $a_n$ and $b_n$ as in Example 9.
