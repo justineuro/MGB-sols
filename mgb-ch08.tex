@@ -1,24 +1,19 @@
 %mgb-ch08
 %Chapter VIII - MGB Solutions
 \begin{enumerate}
-	%8-1
 	\item[1.] \begin{enumerate}
 		\item[(a)] $Q=-\theta\log X$ has an exponential distribution with parameter one.
-		\item[(b)] $P[Y/2 <\theta <Y] = e^{-1/2}-e^{-1}$. Using the pivotal quantity given in part (a) $P[q_1Y < \theta < q_2Y]$ is obtained.  There are two ways of proceeding to find a better confidence interval; the first is to choose $q_1$ and $q_2$ so that the confidence interval has confidence coefficient $e^{-1/2}-e^{-1}$ and minimum expected length, and the second is to choose $q_1$ and $q_2$ so that the confience interval has expected length = $(1/2)E[Y]$ and maximum confidence coefficient.
+		\item[(b)] $P[Y/2 <\theta <Y] = e^{-1/2}-e^{-1}$. Using the pivotal quantity given in part (a) $P[q_1Y < \theta < q_2Y]$ is obtained.  There are two ways of proceeding to find a better confidence interval; the first is to choose $q_1$ and $q_2$ so that the confidence interval has confidence coefficient $e^{-1/2}-e^{-1}$ and minimum expected length, and the second is to choose $q_1$ and $q_2$ so that the confidence interval has expected length = $(1/2)E[Y]$ and maximum confidence coefficient.
 	\end{enumerate}
 	
-	%8-2
 	\item[2.] $Q=(n-1)S^2/\theta$.
 	
-	%8-3
 	\item[3.] $P[T_1 < \tau(\theta) < T_2] = P[T_1 < \tau(\theta)] + P[\tau(\theta) < T_2] - P[T_1<\tau(\theta)\ \mbox{or}\ \tau(\theta) < T_2]$ \\
 	${}\qquad\qquad\qquad\qquad = \gamma + \gamma -1$.
 	
-	%8-4
 	\item[4.] As in Problem 3, $[Y_1 < \theta < Y_n] = P[Y_1 < \theta] + P[\theta < Y_n] - 1$\\
 	${}\qquad\qquad\qquad\qquad = [1-(1/2)^n] + [1-(1/2)^n] -1 = 1 - (1/2)^{n-1}$.
 	
-	%8-5
 	\item[5.] \begin{enumerate}
 		\item[(a)] $Q= \theta\sum X_i$ is a pivotal quantity.
 		\item[(b)] Use part (a) and the Remark on Page 378.
@@ -26,75 +21,58 @@
 		\item[(d)] See part (b).
 		\item[(e)] $n\theta Y_1$.
 	\end{enumerate}
-	
-	%8-6
+
 	\item[6.] Similar to Problem 1.
-	
-	%8-7
+
 	\item[7.] \begin{enumerate}
 		\item[(a)] $\gamma=1/2$. (See the solution to Problem 4.) $E[Y_2-Y_1]=E[\vert X_2-X_1\vert]$ \\
-		$=\ 2\/\sqrt{\pi} \approx 1.1204$
-		\item[(b)] Have $P[q_1 < \overline{X}-\theta < q_2] = 1/2$. Choose $q_1$ and $q_2$ symmetric abput zerp; expected length $\approx .95$.
+		$=\ 2\/\sqrt{\pi} \approx 1.1284$
+		\item[(b)] Have $P[q_1 < \overline{X}-\theta < q_2] = 1/2$. Choose $q_1$ and $q_2$ symmetric about zero; expected length $\approx .95$.
 	\end{enumerate}
-	
-	%8-8
+
 	\item[8.] \begin{enumerate}
 		\item[(a)] Use $Q=\sqrt{n}(\overline{X}-\mu)/\sigma$ as your pivotal quantity.
 		\item[(b)] Use $Q= \sum(X_i-\mu)^2/\sigma^2$ as your pivotal quantity.
 	\end{enumerate}
 
 	\newpage
-	%8-9
+	
 	\item[9.] $(-2.09, 2.84)$ for $\sigma$ known and $(-1.94,2.69)$ for $\sigma$ unknown.
 	
-	%8-10
 	\item[10.] (b) Use $\overline{X} - 1.645S$.
 	
-	%8-11
-	\item[11.] Use $Q = \sum\limits_{i=1}^5\sum\limits_{j=1}^{n_i}(x_{ij}-x_{i.}^2)/\sigma^2$ as your pivotal quantity. $Q\sim$ chi-square with 23 degrees of freedom.
+	\item[11.] Use $Q = \sum\limits_{i=1}^5\sum\limits_{j=1}^{n_i}(X_{ij}-\overline{X}_{i.})^2/\sigma^2$ as your pivotal quantity. $Q\sim$ chi-square with 23 degrees of freedom.
 	
-	%8-12
 	\item[12.] Use $\dfrac{\left(\sum\limits_1^m(X_i-\overline{X})^2/\sigma_1^2\right)/(m-1)}{\left(\sum\limits_1^n(Y_i-\overline{Y})^2/\sigma^2\right)/(n-1)} \sim F(m-1,n-1)$ as a pivotal quantity. 
 	
-	%8-13
 	\item[13.] Want $P[2tS/\sqrt{20} < \sigma]$ where $t$ is the $(1-\gamma)/2$ quantile of a $t$-distribution with 19 degrees of freedom. Write as $P[2tS/\sqrt{20} < \sigma] = P[(19)S^2/\sigma^2 < 19(20)/4t^2]$, where $(19)S^2/\sigma^2$ is chi-square distributed with 19 degrees of freedom, to complete the calculations for any $\gamma$.
 	
-	%8-14
 	\item[14.] \begin{enumerate}
 		\item[(a)] $2z\sigma/sqrt{n}$ where $z$ is the $(1+\gamma)/2$ quantile of a standard normal.
 		\item[(b)] $2tE[S]/\sqrt{n}$ where $t$ is the $(1+\gamma)/2$ quantile of a $t$-distribution with $n-1$ degrees of freedom. See Problem 17 of Chapter VI for $E[S]$.
 	\end{enumerate}
 	
-	%8-15
 	\item[15.] Want $P[2tS/\sqrt{n} < \sigma/5] \approx .95$ where $t$ is .95th quantile of a $t$-distribution with $n-1$ degrees of freedom. Rewrite as $P[(n-1)S^2/\sigma^2 < (n-1)n/100t^2]$. Want the minimum $n$ such that $(n-1)n \ge 100t^2_{.95,n-1}\chi^2_{.95,n-1}$. $n$ a little over 300 seems to work.
-	
-	%8-18
+
 	\item[18.] Use Equation (1). (1.47,10.03)
 	
-	%8-19
-	\item[19.] The first ``the" should be ``a". Use $Q = -\sum\log F(X_i;\theta) = -(1/\theta)\sum \log X_i$ as a pivotal quantity.
+	\item[19.] The first "the" should be "a". Use $Q = -\sum\log F(X_i;\theta) = -(1/\theta)\sum \log X_i$ as a pivotal quantity.
 	
-	%8-20
 	\item[20.] Use the statistical method and $\sum X_i$ as a statistic.
 	
-	%8-21
 	\item[21.] $[(Y_1+Y_2)/2] - \theta$ ias good pivotal quantity.
 	
-	%8-24
 	\item[24.] The sample size seems large enough to use Equation (10) of Example 8. \\
 	$.4375 \pm .0408$ for 90\%. 
 	
-	%8-25
 	\item[25.] The UMVUE of $\tau(\theta)$ is a linear function of $\overline{X}$ and $S$.  $\overline{X}$ and $S$ are independent and have large sample normal distributions. Hence the large sample distribution of the UMVUE of $\tau(\theta)$ is normally distributed. Use this to get an appropriate confidence interval.
 	
 	\newpage
-	%8-26
+	
 	\item[26.] Similar to Example 9.
 	
-	%8-27
 	\item[27.] The posterior distribution is given in the solution of Problem 45 of Chapter VII. Use it and Equation 21.
 	
-	%8-28
 	\item[28.] The likelihood function is the joint distribution of $Y_1, \ldots, Y_k$ looked at as a function of $\theta$. $L(\theta;y_1,\ldots,y_k) = \dfrac{n!}{(n-k)!}\theta^ke^{-\theta\sum\limits_i y_i}e^{-\theta y_k(n-k)}$ for $y_1\le y_2\le \cdots\le y_k$. MLE of $1/\theta$ is $[\sum\limits_1^k Y_j + (n-k)Y_k]/k$. Let $U_i = Y_i-Y_{i-1}$. $U_i\sim$ negative exponential with parameters $\theta(n-i+1)$ using the lack of memory property of exponentially distributed random variables. $\theta(n-1+1)U_i\sim$ negative exponential with parameter 1. \\
 	$\sum Y_i+ (n-k)Y_k = Y_1 + Y_2 + Y_3 + \cdots + Y_{k-1} + (n-k+1)Y_k$ \\
 	$=\ U_1 + (U_1+U_2) + (U_1+U_2+U_3) + \cdots + (n-k+1)(U_1+\cdots+U_k)$ \\
