@@ -1,7 +1,6 @@
 %mgb-ch09
 %Chapter IX - MGB Solutions
 \begin{enumerate}
-	%9-1
 	\item[1.] \begin{enumerate}
 		\item[(a)] \begin{enumerate}
 			\item[(i)] $\Pi_\Upsilon(\theta) = \sum\limits_{i}^{10}{10\choose j}\theta^j(1-\theta)^{10-j}$
@@ -13,13 +12,12 @@
 		\end{enumerate}
 		\item[(c)] \begin{enumerate}
 			\item[(i)] Want $\mathcal{R}(\theta_0) = \mathcal{R}(\theta_1)$. Reject for $\sum X_i \le 4$ does it.
-			\item[(ii)] maximum risk for minimax $\approx 305$ \\
+			\item[(ii)] maximum risk for minimax $\approx 385$ \\
 						maximum risk for M.P. $\approx 815$
 		\end{enumerate}
 		\item[(d)] Reject for $\sum X_i \le 4$.
 	\end{enumerate}
-	
-	%9-2
+
 	\item[2.] \begin{enumerate}
 		\item[(a)] $\Pi(\theta) = 1 - (3/4)^\theta + \theta(3/4)^\theta\log(3/4)$. \\
 					$\mbox{size} = 1/4 + (3/4)\log(3/4)$
@@ -27,20 +25,19 @@
 		\item[(c)] Yes
 		\item[(d)] Reject if and only if $X_1X_2 \ge 1/2$
 		\item[(e)] Reject if and only if $\Pi X_i > 1/2^n$.
-		\item[(f)] This is equivalent to finding the minimax test with $\mathscr{l}(d_0;\theta_1) = \mathscr{l}(d_1;\theta_0) = 1$. Reject if and only if $X_1X_2 \ge k$ where $k$ is solution to $1-k+k\log k = k^2-2k\log k$.
+		\item[(f)] This is equivalent to finding the minimax test with %\scriptsml{\char"2113}
+		$\ell(d_0;\theta_1)$ = $\ell(d_1;\theta_0)$ = $1$. Reject if and only if $X_1X_2 \ge k$ where $k$ is solution to $1-k+k\log k = k^2-2k^2\log k$.
 	\end{enumerate}
 
-	%9-4
 	\item[4.] \begin{enumerate}
 		\item[(e)] Reject for $X < k$ where $k$ is such that $\alpha + \beta = k^2 + (1-k)$ is minimized; i.e., $k=1/2$.
-		\item[(f)] After some manipulation the test reduces to: reject for $X\log X < k$ where $k$ is such that $P_{\theta=1}[X\ln X < k] = \alpha$. Note that this test does say to reject for ``large" and ``small" $x$ which is intuitively appealing.
+		\item[(f)] After some manipulation the test reduces to: reject for $X\log X < k$ where $k$ is such that $P_{\theta=1}[X\ln X < k] = \alpha$. Note that this test does say to reject for "large" and "small" $x$ which is intuitively appealing.
 	\end{enumerate}
 
-	%9-5
 	\item[5.] \begin{enumerate}
 		\item[(a)] Reject if and only if $X > 1-\alpha$.
 		\item[(b)] $\Pi(\theta) = P[X>1/2] = 1/2 + (1/4)\theta$. Size is 1/2.
-		\item[(c)] Yes. Have monotone likelihood ratio in $X$. Test is: reject iff $X > 1-\alpha$.
+		\item[(c)] Yes. Have monotone likelihood ratio in $X$. Test is:\ reject iff $X > 1-\alpha$.
 
 	\newpage
 	
@@ -48,72 +45,60 @@
 		\item[(e)] $\alpha +\beta = P_{\theta=0}[X>k] + P_1[X<k] = 1-k+k^2$ which is a minimum for $k=1/2$.
 	  \end{enumerate}	
   	
-  	%9-6
   	\item[6.] \begin{enumerate}
   		\item[(a)] $\Pi(\theta) = 1 - P_\theta[\theta_0\alpha^{1/n} \le Y_n \le \theta_0] = I_{(0,\theta_0\alpha^{1/n})}(\theta)$ + $\alpha(\theta_0/\theta)^nI_{(\theta_0\alpha^{1/n},\theta_0)}(\theta)$ + $[1-(1-\alpha)(\theta_0/\theta)^n]I_{(\theta_0,\infty)}(\theta)$. 
   	\end{enumerate}
-
-	%9-7
-  	\item[7] \begin{enumerate}
+  
+  	\item[7.] \begin{enumerate}
   		\item[(a)] Reject if and only if $-\sum\log X_i > (\theta_0/2)\chi^2_{2n,1-\alpha}$ where $\chi^2_{2n,1-\alpha}$  is the $(1-\alpha)$-quantile of a chi-square distribution with $2n$ degrees of freedom. 
   	\end{enumerate}
-
-	%9-10
+  
   	\item[10.] \begin{enumerate}
   		\item[(a)] $\Pi(\theta) = P_\theta[X_1+X_2\ge 1] = (1/2)[(2\theta-1)/\theta]^2I_{(1/2,1)}(\theta)$ + $[1-(1/2\theta^2)]I_{(1,\infty)}(\theta).$ \\ Size of test = $\Pi(1) = 1/2$.
   		\item[(b)] UMP size $\alpha = 1/2$ test is given by: reject iff $Y_2 \ge 1/\sqrt{2}$. Power of UMP test is $[1-(1/2\theta^2)]I_{(1/\sqrt{2},\infty)}(\theta)$, which is identical to the power of the given test for $\theta>1$. Note that the test in part (b) is based on a sufficient statistic and the test in part (a) is not. 
   	\end{enumerate}
- 	
- 	%9-11
+  
 	\item[11.] \begin{enumerate}
 		\item[(a)] $\Pi(\theta) = 1 - (1+\theta)e^{-\theta}$
 		\item[(d)] Reject if and only if $X_1 \le 2\log 2$.
 	\end{enumerate}
 
-	%9-12
 	\item[12.] \begin{enumerate}
 		\item[(a)] $k = 1 - \alpha^{1/n}$
 		\item[(b)] $[\alpha + 1-(1-\theta)^n]I_{(0,1-\alpha^{1/n})}(\theta) + I_{(1-\alpha^{1/n},\infty)}(\theta)$
-		\item[(c)] Maybe this part should have been starred. To prove it, find the most powerful size $\alpha$ test of $\theta=0$ versus $\theta=\theta_1$ where $0< \theta_1< 1$ (if $\theta_1>1$ you can tell with certainty which hypothesis is true.) It turns out that the power under the alternative $\theta=\theta_1$ is the same as the power of the given test, so th given test must be uniformly most powerful.
+		\item[(c)] Maybe this part should have been starred. To prove it, find the most powerful size $\alpha$ test of $\theta=0$ versus $\theta=\theta_1$ where $0< \theta_1< 1$ (if $\theta_1>1$ you can tell with certainty which hypothesis is true.) It turns out that the power under the alternative $\theta=\theta_1$ is the same as the power of the given test, so the given test must be uniformly most powerful.
 	\end{enumerate}
 	
 	\newpage
-	%9-13
+	
 	\item[13.] \begin{enumerate}
-		\item[(a)] $\dfrac{\left(\frac{m+n}{-\sum\log X_i - \sum\log Y_j}\right)^{m+n}[\exp(\sum\log X_i + \sum\log Y_j)]^{[(m+n)/(-\sum\log X_i -\sum\log Y_j)]-1}}{\left(\frac{m}{-\sum\log X_i}\right)^m\left(\frac{m}{-\sum\log Y_j}\right)^n[\exp(\sum\log X_i)]^{[n/-\sum\log X_i]-1}[\exp(\sum\log Y_j)]^{[m/-\sum\log Y_j]-1}}$ \\
+		\item[(a)] $\dfrac{\left(\frac{m+n}{-\sum\log X_i - \sum\log Y_j}\right)^{m+n}[\exp(\sum\log X_i + \sum\log Y_j)]^{[(m+n)/(-\sum\log X_i -\sum\log Y_j)]-1}}{\left(\frac{m}{-\sum\log X_i}\right)^m\left(\frac{n}{-\sum\log Y_j}\right)^n[\exp(\sum\log X_i)]^{[n/-\sum\log X_i]-1}[\exp(\sum\log Y_j)]^{[n/-\sum\log Y_j]-1}}$ \\
 		$=\ \frac{(m+n)^{m+n}}{m^mn^n}\left(\frac{-\sum\log X_i}{-\sum\log X_i-\sum\log Y_j}\right)^m \left(\frac{-\sum\log Y_j}{-\sum\log X_i-\sum\log Y_j}\right)^n$
 		\item[(b)] Test is of form reject $\mathscr{H}_0$ if and only if $T^m(1-T)^n \le$ constant.
 		\item[(c)] $T$ has a beta distribution with parameters $m$ and $n$ and does not depend on the common value of $\theta_1$ and $\theta_2$ under $\mathscr{H}_0$. (See Example 25 of Chapter V)
 	\end{enumerate}
 	
-	%9-14
 	\item[14.] See Example 11. How does the answer change if you test $\mathscr{H}_0\colon \theta=1$ versus $\mathscr{H}_1\colon \theta\ne 1$?
 	
-	%9-15
 	\item[15.] This is a good review or test question. The density is the same as the densities of Problem 2 and 4 with slight reparametrization.
 	
-	%9-16
 	\item[16.] See Problem 13.
 	
 	Problem 17 through 35 cover material allied to that of Section 4 on sampling from the normal distribution.
-	%9-17
+	
 	\item[17.] Let $D_i = X_i-Y_i.\ \delta \pm t_{(1+\gamma)/2}\sqrt{\sum(D_i-\overline{D})^2/(n-1)n}$ is $\gamma$-level confidence interval for $\mu_X-\mu_Y$.  Use test: Reject $\mathscr{H}_0$ if and only if the confidence interval does not contain zero. Test has size $\alpha = 1 - \gamma$.
 	
-	%9-22
 	\item[22.] $C^* = \{(x_1,\ldots,x_n)\colon \sum x_i \le 6/n + n\sigma^2 z_\alpha\}$.
 	
-	%9-24
-	\item[24.] Use test: reject $\mathscr{H}_0\colon \mu=\mu_0$ if an only if $\overline{X} > k$ where $\mu_0<k<\mu_1$. \\
+	\item[24.] Use test: reject $\mathscr{H}_0\colon \mu=\mu_0$ if and only if $\overline{X} > k$ where $\mu_0<k<\mu_1$. \\
 	$\alpha = P_{\mu_0}[\overline{X}>k] = 1-\Phi\left(\dfrac{k-\mu_0}{\sigma/\sqrt{n}}\right)\ \to\ 0$ as $n\ \to\ \infty$ and $\beta = P_{\mu_1}[\overline{X}<k] = \Phi\left(\dfrac{k-\mu_1}{\sigma/\sqrt{n}}\right)\ \to\ 0$ as $n\ \to\ \infty$.
 	
-	%9-25
 	\item[25.] Use test based on statistic given in Equation (18).
 	
-	%9-30
 	\item[30.] Could use Theorem 7. $-2\log \lambda_n \approx 4.14 < \chi^2_{.99}(2) = 9.21$
 	
 	\newpage
-	%9-33
+	
 	\item[33.] $X_{11},\ldots, X_{1n}$ r.s. from $N(\mu_1,\sigma^2)$ \\
 		${}\qquad \vdots \qquad\qquad\qquad\qquad \vdots$ \\ 
 		$X_{k1},\ldots, X_{kn}$ r.s. from $N(\mu_k,\sigma^2)$ \\
@@ -121,15 +106,12 @@
 		$\left(\frac{\sum\sum(x_{ji}-\overline{x}_{j.})^2 + \sum\sum \overline{x}_{j.}^2}{\sum\sum(x_{ji}-\overline{x}_{j.})^2}\right)^{-nk/2}$; so the GLR test is equivalent to: reject \\
 		$\mathscr{H}_0$ if and only if $T = \frac{\sum\sum\overline{X}_{j.}^2/k}{\sum\sum(X_{ji}-\overline{X}_{j.})^2/k(n-1)}$ is ``large". Under $\mathscr{H}_0$, $T$ is $F$-distributed with $k$ and $k(n-1)$ degrees of freedom.
 	
-	%9-34
 	\item[34.] $L(\mu_X,\mu_Y,\sigma_X^2,\sigma_Y^2,\rho; (x_1,y_1),\ldots,(x_n,y_n)) \propto$ \\
 	$(\sigma_X^2\sigma_Y^2)^{-n/2}\exp\left\{-\dfrac{1}{2(1-\rho^2)}\left[\dfrac{\sum(x_i-\mu_X)^2}{\sigma_X^2} -2\rho\dfrac{\sum(x_i-\mu_X)(y_i-\mu_Y)}{\sigma_X\sigma_Y} + \dfrac{\sum(y_i-\mu_Y)^2}{\sigma^2_Y}\right]\right\}$. \\
-	The MLE are $\hat{\mu}_X=\overline{x},\hat{\mu}_Y=\overline{y}, \hat{\sigma}^2_X=\sum(x_i\overline{x})^2/n, \hat{\sigma}^2_Y=\sum(y_i\overline{y})^2/n$, and $\hat{\rho} = \sum(x_i-\overline{x})(y_i-\overline{y})/\sqrt{\sum(x_i-\overline{x})^2(y_i-\overline{y})^2}$. $\lambda$ reduces to $(1-\hat{\rho}^2)^{n/2}$. GLR test is equivalent to: reject $\mathscr{H}_0$ if and only if $\vert\hat{\rho}\vert$ is ``large".  Under $\mathscr{H}_0$, the distribution of $\hat{\rho}$ is free of parameters. 
+	The MLE are $\hat{\mu}_X=\overline{x},\hat{\mu}_Y=\overline{y}, \hat{\sigma}^2_X=\sum(x_i-\overline{x})^2/n, \hat{\sigma}^2_Y=\sum(y_i-\overline{y})^2/n$, and $\hat{\rho} = \sum(x_i-\overline{x})(y_i-\overline{y})/\sqrt{\sum(x_i-\overline{x})^2(y_i-\overline{y})^2}$. $\lambda$ reduces to $(1-\hat{\rho}^2)^{n/2}$. GLR test is equivalent to: reject $\mathscr{H}_0$ if and only if $\vert\hat{\rho}\vert$ is "large".  Under $\mathscr{H}_0$, the distribution of $\hat{\rho}$ is free of parameters. 
 	
-	%9-35
 	\item[35.] There are two cases depending on whether or not the common value for the mean under the null hypothesis is knwon. The generalized likelihood ratio technique gives a test using test statistic $\sum[(X_i-\mu)^2/\sigma_i^2]$ for $\mu$ assumed known and test statistic $V$ of Problem 27 of Chapter VI for $\mu$ assumed unknown.
 	
-	%9-39
 	\item[39.] \begin{enumerate}
 		\item[(a)] $E[Q] = \sum\limits_{i}^{k+1}\dfrac{1}{np_j}E[(N-np_j)^2] = \sum\limits_{1}^{k+1}\dfrac{1}{np_j}np_j(1-p_j) = k$. \\
 		$\mbox{var}[Q] = \sum\limits_{i}\sum\limits_{j}\dfrac{1}{np_i}\dfrac{1}{np_j}\mbox{cov}[(N_i-np_i)^2,(N_j-np_j)^2]$. Certain fourth order central moments of the $N_i$'s are needed; these can be found directly or by using the moment generating function. After some manipulation, $\mbox{var}[Q]$ reduces to $2k+(1/n)[\sum(1/p_j) - k^2 -4k -1]$.
@@ -137,34 +119,25 @@
 	\newpage
 	
 		\item[(b)] $E[Q^\circ_k] = \sum\limits_{1}^{k+1}(1/np^\circ_j)[np_j(1-p_j) + n^2(p_j-p^\circ_j)^2]$ \\
-		$E[Q^\circ_k]\Big\vert_{p_j=p^\circ_j} = k$. The answer is no and can be verified by proper choices of $p_j$ and $P^\circ_j$. One might try to minimize $E[Q^\circ_k]$ with respect to the $P_j$'s using Lagrange multipliers and constraint equation $\sum p_j = 1; p_j^*= [(2n+k-1)p^\circ_j-1]/2(n-1)$ results. Furthermore, such $p^*_j$ will fall between zero and one for $p^\circ_j$ between $1/(2n-1+k)$ and $(2n-1)/(2n-1+k)$.
+		$E[Q^\circ_k]\Big\vert_{p_j=p^\circ_j} = k$. The answer is no and can be verified by proper choices of $p_j$ and $p^\circ_j$. One might try to minimize $E[Q^\circ_k]$ with respect to the $P_j$'s using Lagrange multipliers and constraint equation $\sum p_j = 1; p_j^*= [(2n+k-1)p^\circ_j-1]/2(n-1)$ results. Furthermore, such $p^*_j$ will fall between zero and one for $p^\circ_j$ between $1/(2n-1+k)$ and $(2n-1)/(2n-1+k)$.
 		
 	\end{enumerate}
 	
-	%9-40
 	\item[40.] Let $p =$ proportion of headaches that are psychosomatic.  Test $\mathscr{H}_0\colon p \ge .4$ versus $\mathscr{H}_1\colon p<.4$. Let $X =$ \# of psychosomatic headaches. Reject $\mathscr{H}_0$ for small $X$. Model assuming $X$ has a binomial distribution with $n=41$. For $p=.4$, and $X=12,\ \mathscr{H}_0$ would be accepted at the 5\% level.  
 	
-	%9-41
 	\item[41.] Yes, using results from Theorem 8.
 	
-	%9-42
 	\item[42.] Yes; see Example 21.
 	
-	%9-45
 	\item[45.] The likelihood function is proportional to $(p^2)^{n_1}[2p(1-p)]^{n_2}[(1-p)^2]^{n_3}$. The MLE of $p$ is $(2n_1+n_2)/2n \approx .335$. Obtain $\hat{p}_1, \hat{p}_2$, and $\hat{p}_3$ and use test statistic $Q'_2$.  Accept that the data are consistent with the model.
 	
-	%9-46
 	\item[46.] Yes.
 	
-	%9-47
 	\item[47.] Reject hypothesis.
 	
-	%9-48
 	\item[48.] Test $\mathscr{H}_0\colon p_{ij}=p_{i.}p_{.j}$. Reject $\mathscr{H}_0$.
 	
-	%9-49
 	\item[49.] Use $Q'_{2k}$ of Equation 30. Note that it reduces to $\sum\limits_{j=1}^3\dfrac{(N_[ij]-N_{2j})^2}{N_{1j}+N_{2j}}$, which has value $\approx 7.57 > \chi^2_{.95}(2) = 5.99$.
 	
-	%9-50
 	\item[50.] Use approach similar to Problem 45. It is somewhat more difficult to get MLE of $p, q$, and $r=1-p-q$. Compare the computed $Q'_3$ statistic with $\chi^2_{1-\alpha}(1)$.
 \end{enumerate}
