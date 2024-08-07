@@ -15,13 +15,17 @@ The textbook itself may be downloaded from any of the following sites (among oth
 * [Internet Archive (Site 1)](https://archive.org/details/in.ernet.dli.2015.132521)
 * [Internet Archive (Site 2)](https://archive.org/details/in.ernet.dli.2015.137786)
 
-As this version of the manual has not been thoroughly proofread, it would be greatly appreciated if you can inform yours truly, through the `Issues` section of this repository or by email: [(justineuro@gmail.com)](mailto:justineuro@gmail.com), of any typographical errors that you spot (you may also send a `git pull` request for purposes related to this). Looking forward to collaborating with you, many thanks!
+As this version of the manual has not been thoroughly proofread, it would be greatly appreciated if you can inform yours truly, through the `Issues` section of this repository or by email: [justineuro@gmail.com](mailto:justineuro@gmail.com), of any typographical errors that you spot (you may also send a `git pull` request for purposes related to this). Looking forward to collaborating with you, many thanks!
 
 (Note: This version of the solutions manual contains errata that have already been implemented in the 3rd edition of MGB.)
 
 ## Creating a PDF copy
-To create your own PDF copy, open the file `mgb-main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  Alternatively, at the linux command line and under your local copy of `MGB-sols-main` folder:
+To create your own PDF copy, open the file `mgb-main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  
+
+Alternatively, clone this repository, then at the linux command line under your local copy of `MGB-sols` folder execute `pdflatex mgb-main.tex`.  That is,
 ```bash
+git clone https://github.com/justineuro/MGB-sols
+cd MGB-sols
 pdflatex mgb-main.tex
 ```
 
