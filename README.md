@@ -30,7 +30,7 @@ pdflatex mgb-main.tex
 ```
 
 ### For the impatient &hellip;
-A link to a PDF copy or zipped repository: &nbsp; [**PDF**](https://github.com/justineuro/MGB-sols/blob/main/mgb-main.pdf) &nbsp;&nbsp; [**MGB-sols.zip**](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)
+A link to a PDF copy or zipped repository: &nbsp; [**PDF**](https://github.com/justineuro/MGB-sols/blob/main/mgb-main.pdf) &nbsp;&nbsp; [**MGB-sols-main.zip**](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)
 
 
 ## License
