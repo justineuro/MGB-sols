@@ -29,6 +29,10 @@ cd MGB-sols
 pdflatex mgb-main.tex
 ```
 
+### For the impatient &hellip;
+A link to a PDF copy: &nbsp; [**PDF**](https://github.com/justineuro/MGB-sols/blob/main/mgb-main.pdf) &nbsp;&nbsp; [**MGB-sols.zip**]()
+
+
 ## License
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
