@@ -22,7 +22,7 @@ As this version of the manual has not been thoroughly proofread, it would be gre
 ## Creating a PDF copy
 To create your own PDF copy, open the file `mgb-main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  
 
-Alternatively, clone this repository, then at the linux command line under your local copy of `MGB-sols` folder execute `pdflatex mgb-main.tex`.  That is,
+Alternatively, clone this repository, then at the linux command line under your local copy of `MGB-sols` folder (or `MGB-sols-main` folder if you downloaded a copy of the [zipped repository](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)), execute `pdflatex mgb-main.tex`.  That is,
 ```bash
 git clone https://github.com/justineuro/MGB-sols
 cd MGB-sols
