@@ -33,7 +33,7 @@
 \fancyhf{}
 \chead{{\tt \hspace*{0.50in} CHAPTER \thechapter}}
 \fancyhead[RO]{\tt \hspace*{6.00in} \thepage}
-\fancyhead[LE]{\tt \hspace*{-0.75in} \thepage}%-1.00
+\fancyhead[LE]{\tt \hspace*{-1.05in} \thepage}%-1.00
 \fancyfoot[CE,CO]{}
 \fancyfoot[LE,RO]{}
 \renewcommand{\headrulewidth}{0pt} %no headrule
@@ -92,9 +92,10 @@
 %\include{data000-pref}
 }
 
-
-\pagenumbering{arabic}
 \roman{chapter}
+\pagenumbering{arabic}
+\setcounter{page}{0}
+\thispagestyle{empty} % for TOC
 
 \chapter %Chapter 1
 \noindent \vspace*{-0.75in} Chapter \thechapter\ PROBLEMS
