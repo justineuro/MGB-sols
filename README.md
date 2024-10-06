@@ -3,7 +3,23 @@
 ## [*&hellip; Under construction &hellip;*]  
   
 This repository ([MGB-sols](https://github.com/justineuro/MGB-sols)) contains a partial solutions manual to ***Introduction to the Theory of Statistics*** (1974)
-by A.M. Mood, F.A. Graybill, and D.C. Boes. The solutions manual that is given here (PDF and LaTeX codes) is a re-make  of a previous manual that may be found at the following sites (there may others):
+by A.M. Mood, F.A. Graybill, and D.C. Boes. 
+
+## For the impatient &hellip;
+A link to a PDF copy of the partial solutions manual or zipped repository: &nbsp; [**PDF**](https://github.com/justineuro/MGB-sols/blob/main/mgb-main.pdf) &nbsp;&nbsp; [**MGB-sols-main.zip**](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)
+
+## To create your own PDF copy
+To create your own PDF copy, clone this repository, open the file `mgb-main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software), then compile it.  
+
+Alternatively, clone this repository, then at the linux command line under your local copy of `MGB-sols` folder (or `MGB-sols-main` folder if you downloaded a copy of the [zipped repository](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)), execute `pdflatex mgb-main.tex`.  That is,
+```bash
+git clone https://github.com/justineuro/MGB-sols
+cd MGB-sols
+pdflatex mgb-main.tex
+```
+
+## Additional information
+The patial solutions manual that is given in this repository (PDF and LaTeX codes) is a re-make  of a previous manual that may be found at the following sites (there may others):
 
 * [pdfcoffee.com](https://pdfcoffee.com/introduction-to-the-theory-of-statistics-solutions-manual-1974-mood-graybill-pdf-free.html)
 * [kupdf.net](https://kupdf.net/download/introduction-to-the-theory-of-statistics-solutions-manual-1974-mood-graybillpdf_59b92c8c08bbc59450894cb7_pdf)
@@ -18,20 +34,6 @@ The textbook itself may be downloaded from any of the following sites (among oth
 As this version of the manual has not been thoroughly proofread, it would be greatly appreciated if you can inform yours truly, through the `Issues` section of this repository or by email: [justineuro@gmail.com](mailto:justineuro@gmail.com), of any typographical errors that you spot (you may also send a `git pull` request for purposes related to this). Looking forward to collaborating with you, many thanks!
 
 (Note: This version of the solutions manual contains errata that have already been implemented in the 3rd edition of MGB.)
-
-## Creating a PDF copy
-To create your own PDF copy, open the file `mgb-main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software) then compile it.  
-
-Alternatively, clone this repository, then at the linux command line under your local copy of `MGB-sols` folder (or `MGB-sols-main` folder if you downloaded a copy of the [zipped repository](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)), execute `pdflatex mgb-main.tex`.  That is,
-```bash
-git clone https://github.com/justineuro/MGB-sols
-cd MGB-sols
-pdflatex mgb-main.tex
-```
-
-### For the impatient &hellip;
-A link to a PDF copy or zipped repository: &nbsp; [**PDF**](https://github.com/justineuro/MGB-sols/blob/main/mgb-main.pdf) &nbsp;&nbsp; [**MGB-sols-main.zip**](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)
-
 
 ## License
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
