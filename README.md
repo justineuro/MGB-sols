@@ -1,6 +1,7 @@
 # MGB-sols
 
-<!--## [*&hellip; Under construction &hellip;*]  -->
+[![](./mgb-its-cover.jpeg)](https://archive.org/details/in.ernet.dli.2015.132521) &nbsp;&nbsp;&nbsp; [![](./mgb-sols-p1.png)](https://github.com/justineuro/MGB-sols/blob/main/mgb-main.pdf)
+
   
 This repository ([MGB-sols](https://github.com/justineuro/MGB-sols)) contains a partial solutions manual to ***Introduction to the Theory of Statistics*** (1974)
 by A.M. Mood, F.A. Graybill, and D.C. Boes. 
