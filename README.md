@@ -12,7 +12,7 @@ A link to a PDF copy of the partial solutions manual or zipped repository: &nbsp
 ## To create your own PDF copy
 To create your own PDF copy, clone this repository, open the file `mgb-main.tex` in [TeXstudio](https://texstudio.org/) (or a similar software), then compile it.  
 
-Alternatively, clone this repository, then at the linux command line under your local copy of `MGB-sols` folder (or `MGB-sols-main` folder if you downloaded a copy of the [zipped repository](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)), execute `pdflatex mgb-main.tex`.  That is,
+Alternatively, clone this repository, then at the Linux command line under your local copy of `MGB-sols` folder (or `MGB-sols-main` folder if you downloaded a copy of the [zipped repository](https://github.com/justineuro/MGB-sols/archive/refs/heads/main.zip)), execute `pdflatex mgb-main.tex`.  That is,
 ```bash
 git clone https://github.com/justineuro/MGB-sols
 cd MGB-sols
@@ -20,7 +20,7 @@ pdflatex mgb-main.tex
 ```
 
 ## Additional information
-The patial solutions manual that is given in this repository (PDF and LaTeX codes) is a re-make  of a previous manual that may be found at the following sites (there may others):
+The partial solutions manual that is given in this repository (PDF and LaTeX codes) is a re-make  of a previous manual that may be found at the following sites (there may be other sites on the web):
 
 * [pdfcoffee.com](https://pdfcoffee.com/introduction-to-the-theory-of-statistics-solutions-manual-1974-mood-graybill-pdf-free.html)
 * [kupdf.net](https://kupdf.net/download/introduction-to-the-theory-of-statistics-solutions-manual-1974-mood-graybillpdf_59b92c8c08bbc59450894cb7_pdf)
